@@ -23,7 +23,7 @@ exgfx_lenght:
     db $02              ;# 15 - Vertical growing pipe
     db $06              ;# 16 - Spike top
     db $03              ;# 17 - Swooper bat
-    db $08              ;# 18 - Blargg
+    db $08              ;# 18 - Blargg 
     db $02              ;# 19 - Floating skull
     db $01              ;# 1A - Piranha plant stem
     db $02              ;# 1B - Ninji
@@ -38,7 +38,7 @@ exgfx_lenght:
     db $02              ;# 24 - Fire pillar
     db $04              ;# 25 - Bony beetle
     db $04              ;# 26 - Dry bones
-    db $03              ;# 27 - Bones
+    db $04              ;# 27 - Bones
     db $02              ;# 28 - Bone projectile
     db $03              ;# 29 - Fishbone
     db $04              ;# 2A - Thwomp

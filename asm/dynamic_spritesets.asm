@@ -31,6 +31,15 @@
     org $01A365
         GetDrawInfoBnk1:
 
+    org $019F09
+        SubSprGfx2Entry0:
+
+    org $019F0D
+        SubSprGfx2Entry1:
+
+    org $01857C
+        FaceMario:
+
     !pass = 0
 
     while !pass < 2
@@ -55,6 +64,8 @@
         incsrc "original_sprites/net_koopa.asm"
         incsrc "original_sprites/thwomp.asm"
         incsrc "original_sprites/banzai_bill.asm"
+        incsrc "original_sprites/dry_bones_bony_beetle.asm"
+        incsrc "original_sprites/rip_van_fish.asm"
 
         !pass #= !pass+1
 
@@ -68,6 +79,8 @@
     print "by lx5"
     print ""
     print "Freespace used: ", freespaceuse," bytes."
+
+if !pass == 0
 
     print ""
     print " ################################ RAM INFO ################################ "
@@ -94,3 +107,5 @@
     print ""
     print "garbage_collector            = $", hex(garbage_collector)
     print ""
+
+endif

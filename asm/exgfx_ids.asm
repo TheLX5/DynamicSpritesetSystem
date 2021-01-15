@@ -159,7 +159,7 @@ exgfx_ids:
 ;.45 Directional coins
     db !dss_id_null
 ;.46 Diggin' Chuck
-    db !dss_id_chuck_3
+    db !dss_id_chuck_diggin
 ;.47 Swimming/Jumping fish
     db !dss_id_cheep_cheep
 ;.48 Diggin' Chuck's rock
@@ -309,21 +309,21 @@ exgfx_ids:
 ;.90 Large green gas bubble
     db !dss_id_gas_bubble
 ;.91 Chargin' Chuck
-    db !dss_id_chuck_1
+    db !dss_id_chuck_body
 ;.92 Splittin' Chuck
-    db !dss_id_chuck_1
+    db !dss_id_chuck_body
 ;.93 Bouncin' Chuck
-    db !dss_id_chuck_1
+    db !dss_id_chuck_body
 ;.94 Whistlin' Chuck
-    db !dss_id_chuck_1
+    db !dss_id_chuck_body
 ;.95 Clapin' Chuck
-    db !dss_id_chuck_1
+    db !dss_id_chuck_body
 ;.96 Unused (Chargin' Chuck clone)
-    db !dss_id_chuck_1
+    db !dss_id_chuck_body
 ;.97 Puntin' Chuck
-    db !dss_id_chuck_2
+    db !dss_id_chuck_pitchin_puntin
 ;.98 Pitchin' Chuck
-    db !dss_id_chuck_2
+    db !dss_id_chuck_pitchin_puntin
 ;.99 Volcano Lotus
     db !dss_id_volcano_lotus
 ;.9A Sumo Brother
@@ -1080,7 +1080,7 @@ exgfx_ids:
 ;.0C Lava lotus projectile
     db !dss_id_volcano_lotus
 ;.0D Baseball
-    db !dss_id_chuck_2
+    db !dss_id_chuck_pitchin_puntin
 ;.0E Wiggler flower
     db !dss_id_misc_tiles_2
 ;.0F Trail of smoke

@@ -171,10 +171,10 @@
     !dss_id_boo_block               ?= $3D
     !dss_id_big_boo                 ?= $3E
     !dss_id_fishing_boo             ?= $3F
-    !dss_id_moving_hole             ?= $40
-    !dss_id_chuck_1                 ?= $41
-    !dss_id_chuck_2                 ?= $42
-    !dss_id_chuck_3                 ?= $43
+    !dss_id_chuck_head              ?= $40
+    !dss_id_chuck_body              ?= $41
+    !dss_id_chuck_pitchin_puntin    ?= $42
+    !dss_id_chuck_diggin            ?= $43
     !dss_id_chuck_rock              ?= $44
     !dss_id_motor                   ?= $45
     !dss_id_chainsaw                ?= $46
@@ -217,7 +217,7 @@
     !dss_id_reznor_platform         ?= $6B
     !dss_id_podoboo                 ?= $6C
     !dss_id_gas_bubble              ?= $6D
-    !dss_id_            ?= $6E
+    !dss_id_moving_hole             ?= $6E
     !dss_id_            ?= $6F
     !dss_id_            ?= $70
     !dss_id_            ?= $71

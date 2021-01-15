@@ -63,8 +63,8 @@ exgfx_lenght:
     db $02              ;# 3D - Boo block
     db $11              ;# 3E - Big boo
     db $05              ;# 3F - Fishing boo
-    db $02              ;# 40 - Moving hole
-    db $0E              ;# 41 - Chuck
+    db $04              ;# 40 - Chuck head
+    db $0D              ;# 41 - Chuck body
     db $08              ;# 42 - Chuck (puntin' & pitchin')
     db $06              ;# 43 - Chuck (diggin')
     db $02              ;# 44 - Chuck rock
@@ -107,7 +107,7 @@ exgfx_lenght:
     db $02              ;# 69 - Reznor fireball
     db $02              ;# 6A - Balls
     db $01              ;# 6B - Reznor platform
-    db $0              ;# 6C - Unused
+    db $02              ;# 6C - Moving hole
     db $0              ;# 6D - Unused
     db $0              ;# 6E - Unused
     db $0              ;# 6F - Unused

@@ -5,6 +5,7 @@ This whole repo still is being worked on. **Please come back later when an actua
 ### Features
 * Easy to use API, just call a routine to do the heavy work for you
 * Lunar Magic's ExGFX system to store sprite graphics
+* Lunar Magic's sprites showing fine regardless of the loaded ExGFX
 * VRAM queue system; used to fill the VRAM at the sprite area, but it may be used for something else
 * more to come later, i just wanted to prepare the repo to upload the files
 
@@ -43,6 +44,6 @@ X, Y and the data bank are preserved.
 
 **Tip #2**: To handle 8x8 tiles, check out `asm/original_sprites/rex.asm` or `first_shared_gfx_write` in `asm/original_sprites/shared_gfx_routines.asm`. It really isn't optimal yet, but it may give help as a reference.
 
-**Tip #3**: Use Thomas' commented disassemblies of banks [01](https://bin.smwcentral.net/u/7012/Bank01.asm), [02](https://bin.smwcentral.net/u/7012/Bank02.asm) and [03](https://bin.smwcentral.net/u/7012/Bank03.asm). They will greatly help to understand where to hijack and how to approach each situation.
+**Tip #3**: Use Thomas' commented disassemblies of banks [01](https://bin.smwcentral.net/u/7012/Bank01.asm), [02](https://bin.smwcentral.net/u/7012/Bank02.asm) and [03](https://bin.smwcentral.net/u/7012/Bank03.asm). They will greatly help you to understand where to hijack and how to approach each situation.
 
 more info later (maybe)

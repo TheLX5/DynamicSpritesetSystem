@@ -66,6 +66,7 @@
         incsrc "original_sprites/banzai_bill.asm"
         incsrc "original_sprites/dry_bones_bony_beetle.asm"
         incsrc "original_sprites/rip_van_fish.asm"
+        incsrc "original_sprites/chucks.asm"
 
         !pass #= !pass+1
 

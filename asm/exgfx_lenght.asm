@@ -66,7 +66,7 @@ exgfx_lenght:
     db $04              ;# 40 - Chuck head
     db $0D              ;# 41 - Chuck body
     db $07              ;# 42 - Chuck (puntin' & pitchin')
-    db $06              ;# 43 - Chuck (diggin')
+    db $07              ;# 43 - Chuck (diggin')
     db $02              ;# 44 - Chuck rock
     db $03              ;# 45 - Motor
     db $02              ;# 46 - Chainsaw

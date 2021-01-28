@@ -46,6 +46,9 @@
     org $01B7B3
         FinishOAMWrite:
 
+    org $03C000
+        GenTileFromSpr2:
+
     !pass = 0
 
     while !pass < 2
@@ -71,6 +74,21 @@
         incsrc "original_sprites/thwomp.asm"
         incsrc "original_sprites/banzai_bill.asm"
         incsrc "original_sprites/dry_bones_bony_beetle.asm"
+        incsrc "original_sprites/magikoopa.asm"
+        incsrc "original_sprites/ball_n_chain.asm"
+        incsrc "original_sprites/grinder.asm"
+        incsrc "original_sprites/bowser_statue.asm"
+        incsrc "original_sprites/hothead.asm"
+        incsrc "original_sprites/sparky.asm"
+        incsrc "original_sprites/fishbone.asm"
+        incsrc "original_sprites/falling_spike.asm"
+        incsrc "original_sprites/castle_block.asm"
+        incsrc "original_sprites/reflecting_fireball.asm"
+        incsrc "original_sprites/podoboo.asm"
+        incsrc "original_sprites/climbing_net.asm"
+        incsrc "original_sprites/candle_flames.asm"
+        incsrc "original_sprites/rotating_gray_platform.asm"
+        incsrc "original_sprites/wooden_spike.asm"
         incsrc "original_sprites/rip_van_fish.asm"
         incsrc "original_sprites/dolphins.asm"
         incsrc "original_sprites/blurp.asm"

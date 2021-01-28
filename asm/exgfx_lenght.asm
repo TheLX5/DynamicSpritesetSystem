@@ -50,7 +50,7 @@ exgfx_lenght:
     db $0A              ;# 30 - Net koopa
     db $03              ;# 31 - Hothead
     db $01              ;# 32 - Sparky
-    db $07              ;# 33 - Climbing net
+    db $08              ;# 33 - Climbing net
     db $02              ;# 34 - Grinder
     db $02              ;# 35 - Wooden spike
     db $04              ;# 36 - Bowser statue
@@ -107,9 +107,9 @@ exgfx_lenght:
     db $02              ;# 69 - Reznor fireball
     db $02              ;# 6A - Balls
     db $01              ;# 6B - Reznor platform
-    db $02              ;# 6C - Moving hole
-    db $0              ;# 6D - Unused
-    db $0              ;# 6E - Unused
+    db $01              ;# 6C - Podoboo
+    db $0              ;# 6D - Gas bubble
+    db $02              ;# 6E - Moving hole
     db $0              ;# 6F - Unused
     db $0              ;# 70 - Unused
     db $0              ;# 71 - Unused

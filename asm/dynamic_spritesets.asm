@@ -40,6 +40,12 @@
     org $01857C
         FaceMario:
 
+    org $01B7BB
+        FinishOAMWriteRt:
+
+    org $01B7B3
+        FinishOAMWrite:
+
     !pass = 0
 
     while !pass < 2
@@ -66,6 +72,11 @@
         incsrc "original_sprites/banzai_bill.asm"
         incsrc "original_sprites/dry_bones_bony_beetle.asm"
         incsrc "original_sprites/rip_van_fish.asm"
+        incsrc "original_sprites/dolphins.asm"
+        incsrc "original_sprites/blurp.asm"
+        incsrc "original_sprites/urchin.asm"
+        incsrc "original_sprites/torpedo_ted.asm"
+        incsrc "original_sprites/porcupuffer.asm"
         incsrc "original_sprites/chucks.asm"
 
         !pass #= !pass+1

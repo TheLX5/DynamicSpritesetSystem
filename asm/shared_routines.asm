@@ -1,10 +1,20 @@
 find_and_queue_gfx:
+
+.check_null
+    cmp #!dss_id_null
+    bne .init
+..premature_return
+    clc
+    rtl
+
+.init
     phy
     phx
     phb
     pea $4040                       ; set data bank $40 for easy access purposes
     plb
     plb
+
 
 .search_gfx
     ldx #$00

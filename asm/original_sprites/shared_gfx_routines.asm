@@ -290,6 +290,8 @@ if !pass == 0
             lda.l shared_sprite_gfx,x
             cmp #$FF 
             beq .original
+            cpy #$54
+            bcs .original
             jsl find_and_queue_gfx
             bcs .loaded
             ldx $15E9|!addr

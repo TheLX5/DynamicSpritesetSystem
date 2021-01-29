@@ -62,6 +62,7 @@
         incsrc "tweaker.asm"
         incsrc "garbage_collector.asm"
         
+        incsrc "original_sprites/generators.asm"
         incsrc "original_sprites/shared_gfx_routines.asm"
         incsrc "original_sprites/rex.asm"
         incsrc "original_sprites/pipe_lakitu.asm"
@@ -96,6 +97,9 @@
         incsrc "original_sprites/torpedo_ted.asm"
         incsrc "original_sprites/porcupuffer.asm"
         incsrc "original_sprites/chucks.asm"
+        incsrc "original_sprites/wiggler.asm"
+        incsrc "original_sprites/growing_pipe.asm"
+        incsrc "original_sprites/bubble.asm"
 
         !pass #= !pass+1
 

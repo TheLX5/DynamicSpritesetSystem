@@ -20,6 +20,8 @@ if !pass == 0
 else 
 
     lakitu_fishing:
+        lda #!dss_id_lakitu
+        jsl find_and_queue_gfx
         lda.l !dss_tile_buffer+4
         sta $0302|!addr,y
         lda #$24

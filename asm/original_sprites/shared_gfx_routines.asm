@@ -382,6 +382,7 @@ else
         pla 
         sta $00
         sep #$20
+        ldx $15E9|!addr
         jml second_shared_gfx_return
     .loaded
         phx
@@ -401,6 +402,7 @@ else
         pla 
         sta $00
         sep #$20
+        ldx $15E9|!addr
         jml second_shared_gfx_1_end
     .original
         lda.l shared_sprite_tilemap,x
@@ -420,6 +422,7 @@ else
         pla 
         sta $00
         sep #$20
+        ldx $15E9|!addr
         jml second_shared_gfx_return
     .loaded
         phx
@@ -439,6 +442,7 @@ else
         pla 
         sta $00
         sep #$20
+        ldx $15E9|!addr
         jml second_shared_gfx_2_end
     .original
         lda.l shared_sprite_tilemap,x

@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02BE58
         sparky_write_hijack:
             ldy !15EA,x
@@ -19,5 +18,4 @@ if !pass == 0
             sta $0303|!addr,y
             rts
         warnpc $02BE8C
-
-endif
+pullpc

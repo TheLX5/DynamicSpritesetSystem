@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $03921B
         falling_spike_write_hijack:
             jml falling_spike_write
@@ -8,7 +7,7 @@ if !pass == 0
         falling_spike_write_end:
     org $03926C
         falling_spike_write_return:
-else
+pullpc
 
     falling_spike_write:
         lda #!dss_id_falling_spike
@@ -21,5 +20,3 @@ else
         lda.l !dss_tile_buffer+$00
         sta $0302|!addr,y
         jml falling_spike_write_end
-
-endif

@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02D9D6
         bubble_init_hijack:
             jsl bubble_shine_load
@@ -47,8 +46,7 @@ if !pass == 0
     org $02D8A9
         bubble_item_props:
             db $85,$85,$05,$08
-
-else
+pullpc
 
     bubble_item:
         pha
@@ -106,5 +104,3 @@ else
     .big
         sta $0302|!addr,y
         jml bubble_write_end
-
-endif

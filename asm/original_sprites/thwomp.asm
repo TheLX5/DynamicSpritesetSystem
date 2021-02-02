@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $01AF57
         thwomp_gfx_init_hijack:
             pei ($00)
@@ -30,8 +29,7 @@ if !pass == 0
     org $01AF4A
         thwomp_tiles: 
             db $00,$00,$01,$01,$02
-
-else 
+pullpc
 
     thwomp_gfx_init:
         bcs .loaded 
@@ -65,6 +63,3 @@ else
         plx
     .normal
         jml thwomp_gfx_write_end
-
-
-endif

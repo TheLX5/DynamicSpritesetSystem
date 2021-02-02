@@ -1,3 +1,5 @@
+includefrom "dynamic_spritesets.asm"
+
 exgfx_lenght:
     db $05              ;# 00 - Koopa
     db $03              ;# 01 - Koopa shell

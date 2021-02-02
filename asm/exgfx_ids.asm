@@ -1,3 +1,5 @@
+includefrom "dynamic_spritesets.asm"
+
 ;#########################################################################
 ;# Sprite ExGFX ID list
 ;# 

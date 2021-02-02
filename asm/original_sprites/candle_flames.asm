@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02FA47
         candle_flames_write_hijack:
             jml candle_flames_write
@@ -13,9 +12,7 @@ if !pass == 0
         candle_flames_tilemap:
             ;db $E2,$E4,$E2,$E4
             db $00,$01,$00,$01
-
-        
-else
+pullpc
 
     candle_flames_write:
         tax
@@ -34,5 +31,3 @@ else
         lda.l !dss_tile_buffer,x
         plx
         jml candle_flames_write_end
-
-endif

@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $038B3D
         bowser_statue_init_hijack:
             lda.b #!dss_id_bowser_statue
@@ -57,8 +56,7 @@ if !pass == 0
             db $00,$01
             db $10,$11
         warnpc $038F13
-
-else
+pullpc
 
     statue_fireball_write:
         tax
@@ -93,5 +91,3 @@ else
         lda !dss_tile_buffer,x
         sta $0302|!addr,y
         jml bowser_statue_write_end
-
-endif

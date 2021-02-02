@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02B003
         generator_load_hijack:
             jml generator_load
@@ -8,8 +7,7 @@ if !pass == 0
         generator_load_end:
     org $02B02A
         generator_load_return:
-
-else
+pullpc
 
     generator_load:
         ldx $18B9|!addr
@@ -79,5 +77,3 @@ else
         db !dss_id_null
         db !dss_id_null
         db !dss_id_null
-
-endif

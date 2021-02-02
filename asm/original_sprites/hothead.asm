@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02BEB5
         hothead_init_hijack:
             lda #!dss_id_hothead
@@ -36,8 +35,7 @@ if !pass == 0
         warnpc $02BF13
     org $02BF13
         hothead_eyes_write_end:
-
-else
+pullpc
 
     hothead_init:
         tya
@@ -67,5 +65,3 @@ else
         adc #$10 
     .open
         jml hothead_eyes_write_end
-
-endif

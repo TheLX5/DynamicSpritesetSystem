@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $01B973
         net_koopa_gfx_page:
             db $01,$01,$01,$01,$01
@@ -14,8 +13,7 @@ if !pass == 0
 
     org $01BA7E
         net_koopa_load_gfx_return:
-
-else
+pullpc
 
     net_koopa_load_gfx:
         lda #!dss_id_koopa 
@@ -26,5 +24,3 @@ else
         lda !157C,x
         pha
         jml net_koopa_load_gfx_end
-
-endif

@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02A23F
         hopping_flame_remnant_hijack:
             jml hopping_flame_remnant
@@ -11,8 +10,7 @@ if !pass == 0
     org $02A217
         hopping_flame_remnant_tiles:
             db $00,$01
-
-else
+pullpc
 
     hopping_flame_remnant:
         tax
@@ -27,5 +25,3 @@ else
         clc
         adc.l !dss_tile_buffer+2
         jml hopping_flame_remnant_end
-
-endif

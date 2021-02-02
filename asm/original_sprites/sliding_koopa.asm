@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $0189EC
         sliding_koopa:
             ldx #$03
@@ -9,5 +8,4 @@ if !pass == 0
             sta $0302|!addr,y
             rts
         warnpc $0189FC
-
-endif
+pullpc

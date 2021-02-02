@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $039790
         fishbone_body_write_hijack:
             lda.b #!dss_id_fishbone
@@ -24,8 +23,7 @@ if !pass == 0
             ;db $B3,$B3
             db $00,$00
             db $10,$10
-
-else
+pullpc
 
     fishbone_body_write:
         ldy !15EA,x
@@ -48,5 +46,3 @@ else
         clc
         adc.l !dss_tile_buffer+$02
         jml fishbone_tail_write_end
-
-endif

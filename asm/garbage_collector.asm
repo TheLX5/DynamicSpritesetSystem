@@ -1,3 +1,5 @@
+includefrom "dynamic_spritesets.asm"
+
 ;#########################################################################
 ;# Dynamic Spriteset's late game routines
 ;# 
@@ -5,13 +7,11 @@
 ;# The system uses it to mark tiles as unused and load graphics of recently
 ;# spawned sprites.
 
-if !pass == 0
-
+pushpc
     org $00A2EE
         autoclean jml late_game_routines
         nop
-
-else
+pullpc
 
 late_game_routines:
     sta $1C
@@ -201,5 +201,3 @@ tile_lookup:
             dw 0,0,0,0,0,0,0,0
         endif
     endif
-
-endif

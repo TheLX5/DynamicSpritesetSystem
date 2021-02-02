@@ -1,5 +1,5 @@
-if !pass == 0
 
+pushpc
     org $02D5E4
         banzai_bill_gfx_routine:
             jsr GetDrawInfoBnk2
@@ -35,8 +35,8 @@ if !pass == 0
             db $04,$07,$0A,$0B
             db $05,$06,$0A,$0B
             db $08,$09,$02,$03
+pullpc
 
-else
 
     banzai_bill_gfx_routine_aux:
         lda.w banzai_bill_tiles,x
@@ -49,5 +49,3 @@ else
         sta $0303|!addr,y
         iny #4
         rtl
-
-endif

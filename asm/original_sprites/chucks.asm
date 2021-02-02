@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02C81A
         chuck_main_gfx_hijack:
             jsl chuck_main_gfx_get_data
@@ -167,8 +166,7 @@ if !pass == 0
         chuck_digging_shovel_tilemap:
             ;db $CA,$E2,$A0
             db $06,$00,$03
-
-else
+pullpc
 
     chuck_main_gfx_get_data:
     .body
@@ -313,5 +311,3 @@ else
         sta $0302|!addr,y
         plx
         jml chuck_digging_shovel_write_end
-
-endif

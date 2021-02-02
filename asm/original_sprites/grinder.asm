@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $01DC0B
         line_grinder_write_hijack:
             lda #!dss_id_grinder
@@ -42,8 +41,7 @@ if !pass == 0
         ground_grinder_y_offset:
     org $01DB9E
         ground_grinder_props:
-
-else
+pullpc
 
     ground_grinder_write:
         ldx #$03
@@ -96,5 +94,3 @@ else
         dex 
         bpl .loop
         rtl
-
-endif

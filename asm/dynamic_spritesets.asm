@@ -9,18 +9,25 @@
 ;# TO DO:
 ;#  - Use MaxTile API directly instead of working with the OAM mirror for
 ;#    proper priorities between sprites
+;#  - Make most of SMW sprites use DSS natively
 
 
 ;################################################
-;# Include defines
+;# Ensure SA-1 only compatibility
 
     sa1rom
+
+    assert read1($00FFD5) == $23,"This patch only works on ROMs with SA-1 Pack!"
+
+;################################################
+;# Include defines
 
     incsrc "sa1_defs.asm"
     incsrc "dynamic_spritesets_defines.asm"
 
 ;################################################
-;# Insert asm
+;# Common locations in ROM
+;# Used to call routines directly instead of writing raw addresses
 
     org $02D378
         GetDrawInfoBnk2:
@@ -49,19 +56,28 @@
     org $03C000
         GenTileFromSpr2:
 
-    !pass = 0
+;################################################
+;# Debug flag
 
-    while !pass < 2
-        if !pass == 1
-            freecode
-            incsrc "shared_routines.asm"
-            incsrc "exgfx_lenght.asm"
-            incsrc "exgfx_ids.asm"
-        endif
+    !debug = 0
+    
+;################################################
+;# Inserts ASM
 
-        incsrc "tweaker.asm"
+    freecode
+
+;################################################
+;# Includes main files
+
         incsrc "garbage_collector.asm"
-        
+        incsrc "exgfx_lenght.asm"
+        incsrc "exgfx_ids.asm"
+        incsrc "tweaker.asm"
+        incsrc "shared_routines.asm"
+
+;################################################
+;# Includes edits SMW's sprites
+
         incsrc "original_sprites/generators.asm"
         incsrc "original_sprites/shared_gfx_routines.asm"
         incsrc "original_sprites/rex.asm"
@@ -101,12 +117,8 @@
         incsrc "original_sprites/growing_pipe.asm"
         incsrc "original_sprites/bubble.asm"
 
-        !pass #= !pass+1
-
-    endif
-
 ;################################################
-;# Print data
+;# Print info
 
     print "Dynamic Spritesets auxiliary patch"
     print "Version 0.0.1"
@@ -114,7 +126,7 @@
     print ""
     print "Freespace used: ", freespaceuse," bytes."
 
-if !pass == 0
+if !debug == 1
 
     print ""
     print " ################################ RAM INFO ################################ "

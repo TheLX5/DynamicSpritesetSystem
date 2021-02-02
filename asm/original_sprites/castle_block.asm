@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $038EB4
         castle_block_write_hijack:
             lda #!dss_id_castle_block
@@ -24,9 +23,7 @@ if !pass == 0
     org $038EB0
         castle_block_tilemap:
             db $00,$01,$02,$03
-
-
-else
+pullpc
 
     castle_block_write:
     .loop
@@ -51,5 +48,3 @@ else
         dex 
         bpl .loop
         rtl
-
-endif

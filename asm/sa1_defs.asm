@@ -1,3 +1,4 @@
+includeonce
 
 ; Global multi-purpose defines for anything.
 

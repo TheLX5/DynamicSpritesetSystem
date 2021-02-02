@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $01BB16
         climbing_net_init_hijack:
             jml climbing_net_init
@@ -26,8 +25,7 @@ if !pass == 0
             db $06,$07,$06,$06,$07,$06              ; Two columns
             db $00,$00,$00                          ; (unused)
             db $04,$05,$04                          ; One column
-
-else
+pullpc
 
     climbing_net_init:
         lda #!dss_id_climbing_net
@@ -54,5 +52,4 @@ else
         plx
         jml climbing_net_write_end
 
-endif
     

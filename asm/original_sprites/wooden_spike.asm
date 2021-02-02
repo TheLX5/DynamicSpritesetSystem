@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $0394CF
         wooden_spike_init_hijack:
             lda #!dss_id_wooden_spike
@@ -32,8 +31,7 @@ if !pass == 0
             db $01,$01,$01,$01,$00                  ; Downwards-pointing
             db $01,$01,$01,$01,$00                  ; Upwards-pointing
         warnpc $0394C5
-
-else
+pullpc
 
     wooden_spike_init:
         stz $02
@@ -52,5 +50,3 @@ else
         lda.l !dss_tile_buffer,x
         sta $0302|!addr,y
         jml wooden_spike_write_end
-
-endif

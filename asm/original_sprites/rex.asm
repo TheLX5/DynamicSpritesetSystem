@@ -4,8 +4,7 @@
 ;################################################
 ;# Hijack(s)
 
-if !pass == 0
-
+pushpc
 org $039692
     rex_gfx_init_hijack:
         jml rex_gfx_init
@@ -18,11 +17,11 @@ org $0396C3
         jml rex_write_edit
         nop #2
     rex_write_edit_return:
+pullpc
 
 ;################################################
 ;# Main GFX code
 
-else
 
 rex_gfx_init:
     lda.b #!dss_id_rex
@@ -60,5 +59,3 @@ rex_tiles:                      ; Tile numbers for each of the Rex's animation f
     db $00,$01                  ; Half-smushed trasition
     db $04,$04,$03,$03          ; Half-smushed walking A/B
     db $05,$05                  ; Fully-smushed
-
-endif

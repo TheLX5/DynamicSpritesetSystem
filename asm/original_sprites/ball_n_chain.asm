@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02D813
         ball_n_chain_ball_write_hijack:
             lda #!dss_id_ball_n_chain
@@ -26,10 +25,7 @@ if !pass == 0
         ball_n_chain_ball_y_offset:
     org $02D80F
         ball_n_chain_ball_props:
-
-
-
-else
+pullpc
 
     ball_n_chain_ball_write:
         ldx #$03
@@ -51,5 +47,3 @@ else
         bpl .loop
         ldx $15E9|!addr
         rtl
-
-endif

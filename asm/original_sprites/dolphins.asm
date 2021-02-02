@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02BC1D
         horizontal_dolphin_init_hijack:
             lda.b #!dss_id_horizontal_dolphin
@@ -42,11 +41,7 @@ if !pass == 0
         warnpc $02BC74
     org $02BC74
         horizontal_dolphin_write_end:
-
-
-
-    
-else
+pullpc
 
     horizontal_dolphin_init:
         lda !B6,x
@@ -72,6 +67,3 @@ else
         lda.l !dss_tile_buffer,x
         sta $030A|!addr,y
         jml horizontal_dolphin_write_end
-
-
-endif

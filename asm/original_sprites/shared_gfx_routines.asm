@@ -1,6 +1,4 @@
-
-if !pass == 0
-    
+pushpc
     org $019C7F
         shared_sprite_offset:
             db $09,$09,$10,$09,$00,$00,$00,$00
@@ -307,11 +305,10 @@ if !pass == 0
 
     org $019F40
         third_shared_gfx_end:
+pullpc
 
 ;################################################
 ;# Main GFX code
-
-else 
 
     stunned_bobomb:
         tax 
@@ -702,5 +699,3 @@ else
         .ninji
             ;db $A7,$A9                              ;$019C7D - Ninji
             db !dss_id_ninji, !dss_id_ninji
-
-endif

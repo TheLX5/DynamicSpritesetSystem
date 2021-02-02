@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02D848
         rotating_gray_platform_write_hijack:
             lda #!dss_id_brown_platform
@@ -27,8 +26,7 @@ if !pass == 0
             ;db $A2,$60,$61,$62
             db $00,$03,$01,$02
         warnpc $02D848
-
-else
+pullpc
 
     rotating_gray_platform_write:
         ldx #$03
@@ -51,5 +49,3 @@ else
         dex 
         bpl .loop
         rtl
-
-endif

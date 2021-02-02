@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02E6A7
         lakitu_fishing_hijack:
             jml lakitu_fishing
@@ -16,8 +15,7 @@ if !pass == 0
     
     org $02E70B
         lakitu_fishing_line_end:
-
-else 
+pullpc
 
     lakitu_fishing:
         lda #!dss_id_lakitu
@@ -41,5 +39,3 @@ else
         inc
         sta $0302|!addr,y
         jml lakitu_fishing_line_end
-
-endif 

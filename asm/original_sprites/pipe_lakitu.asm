@@ -1,8 +1,4 @@
-;# Pipe lakitu
-
-!dss_id_lakitu ?= $09
-
-if !pass == 0
+pushpc
     org $02E9EC
         pipe_lakitu_hijack:
             lda.b #!dss_id_lakitu
@@ -30,8 +26,7 @@ if !pass == 0
             db $00,$01,$02
         pipe_lakitu_bottom_tiles:
             db $03,$03,$03
-
-else
+pullpc
 
 pipe_lakitu_edit:
     lda !1602,x
@@ -46,5 +41,3 @@ pipe_lakitu_edit:
     tax
     lda.l !dss_tile_buffer,x
     jml pipe_lakitu_return
-
-endif

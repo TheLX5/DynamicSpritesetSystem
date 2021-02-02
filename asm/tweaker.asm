@@ -1,5 +1,6 @@
-if !pass == 0
+includefrom "dynamic_spritesets.asm"
 
+pushpc
     org $07F3FE                                 ; Tweaker byte 3: lwcfpppg
         db $0B,$09,$07,$05,$0B,$09,$07,$05		; l = don't interact with layer 2
         db $0B,$0B,$09,$09,$05,$17,$32,$05		; w = disable water interaction
@@ -39,5 +40,4 @@ if !pass == 0
 
         db $F5,$F5,$CB,$CD,$F3,$3F,$FF,$20
         db $38
-
-endif
+pullpc

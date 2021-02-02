@@ -1,3 +1,5 @@
+includeonce
+
 find_and_queue_gfx:
 
 .check_null

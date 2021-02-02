@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $028E62
         jsl rip_van_fish_z_tiles_write
 
@@ -9,9 +8,7 @@ if !pass == 0
     org $028DD7
         rip_van_fish_z_tiles:
             db $03,$02,$01,$00
-
-
-else 
+pullpc
 
     rip_van_fish_z_tiles_write:
         tax
@@ -35,5 +32,3 @@ else
 
     .offsets
         db $00,$01,$10,$11
-
-endif

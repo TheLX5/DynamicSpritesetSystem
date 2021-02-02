@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $01BDD6
         magikoopa_wand_init_hijack:
             jml magikoopa_wand_init
@@ -25,9 +24,7 @@ if !pass == 0
         warnpc $01BF09
     org $01BF09
         magikoopa_wand_write_end:
-
-
-else
+pullpc
 
     magikoopa_wand_init:
         lda #!dss_id_magikoopa_magic
@@ -60,5 +57,3 @@ else
         inc 
         sta $030A|!addr,y
         jml magikoopa_magic_write_end
-
-endif

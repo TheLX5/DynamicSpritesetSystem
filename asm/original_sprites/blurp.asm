@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $0384CA
         blurp_write:
             lda #!dss_id_blurp
@@ -23,8 +22,7 @@ if !pass == 0
 
     org $0384F5
         blurp_write_end:
-        
-else
+pullpc
 
     blurp_write_extra:
         sta $0301|!addr,y
@@ -44,6 +42,3 @@ else
         lda #$00
         ldy #$02
         jml FinishOAMWrite
-
-
-endif

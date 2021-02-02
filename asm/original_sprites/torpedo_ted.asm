@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02B8F7
         torpedo_ted_init_hijack:
             lda.b #!dss_id_torpedo_ted
@@ -42,8 +41,7 @@ if !pass == 0
         warnpc $029E78
     org $029E78
         torpedo_ted_arm_end:
-
-else
+pullpc
 
     torpedo_ted_arm_write:
             pla
@@ -73,5 +71,3 @@ else
         lda.l !dss_tile_buffer+$01
     .animate
         jml torpedo_ted_write_end
-
-endif

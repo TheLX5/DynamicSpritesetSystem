@@ -1,5 +1,4 @@
-if !pass == 0
-    
+pushpc
     org $0385A3
         porcupuffer_init_hijack:
             lda #!dss_id_porcupuffer
@@ -27,8 +26,7 @@ if !pass == 0
             db $00,$02,$01,$03
             db $00,$02,$01,$04
         warnpc $03859B
-
-else
+pullpc
 
     porcupuffer_init:
         lda $14
@@ -47,4 +45,3 @@ else
         lda.l !dss_tile_buffer,x
         jml porcupuffer_write_end
 
-endif

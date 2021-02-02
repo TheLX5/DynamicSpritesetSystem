@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02F110
         wiggler_init_hijack:
             jsl wiggler_init_load_misc
@@ -53,8 +52,7 @@ if !pass == 0
         flower_write_end:
     org $029D44
         flower_write_return:
-
-else
+pullpc
 
     flower_write:
         lda.b #!dss_id_misc_tiles_2
@@ -113,5 +111,3 @@ else
         adc #$10
         sta $0302|!addr,y
         jml wiggler_flower_write_end
-
-endif

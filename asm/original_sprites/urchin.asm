@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02BFC5
         jmp fix_urchin_gfx_end
 
@@ -33,9 +32,7 @@ if !pass == 0
         urchin_body_tilemap:
             ;db $C4,$C6,$C8,$C6
             db $00,$01,$02,$01
-
-
-else
+pullpc
 
     urchin_init:
         lda !163E,x
@@ -54,5 +51,3 @@ else
         lda.l !dss_tile_buffer+$04
     ..open
         jml urchin_write_end
-
-endif

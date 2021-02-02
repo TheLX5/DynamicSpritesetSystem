@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $01E453
         collapsing_bones_hijack:
             lda.b #!dss_id_bones
@@ -80,8 +79,7 @@ if !pass == 0
             plx
             rts
         warnpc $02A2DE
-
-else
+pullpc
 
 
     bone_projectile_write:
@@ -162,5 +160,3 @@ else
         sta $0306|!addr,y
         ldx $15E9|!addr
         jml collapsing_bones_end
-
-endif

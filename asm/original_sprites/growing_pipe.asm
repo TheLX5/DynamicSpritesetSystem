@@ -1,5 +1,4 @@
-if !pass == 0
-
+pushpc
     org $02E902
         vertical_growing_pipe_write_hijack:
             lda.b #!dss_id_vertical_growing_pipe
@@ -21,8 +20,7 @@ if !pass == 0
         warnpc $02E92E
     org $02E92E
         vertical_growing_pipe_write_end:
-
-else
+pullpc
 
     vertical_growing_pipe_write:
         lda.l !dss_tile_buffer+$00
@@ -34,5 +32,3 @@ else
         sta $0303|!addr,y
         sta $0307|!addr,y
         jml vertical_growing_pipe_write_end
-
-endif

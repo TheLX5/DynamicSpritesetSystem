@@ -37,7 +37,7 @@ exgfx_lenght:
     db $05              ;# 21 - Monty mole
     db $0B              ;# 22 - Sumo bro.
     db $01              ;# 23 - Sumo bro. lightning
-    db $02              ;# 24 - Fire pillar
+    db $03              ;# 24 - Fire pillar
     db $04              ;# 25 - Bony beetle
     db $04              ;# 26 - Dry bones
     db $04              ;# 27 - Bones

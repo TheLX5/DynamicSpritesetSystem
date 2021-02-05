@@ -225,7 +225,7 @@ pushpc
 
             .sumo_bro_lightning
                 ;db $F3,$CE,$F3,$CE                      ;$019C79 - Sumo Bros. Lightning
-            db $F3,$CE,$F3,$CE
+                db $00,$01,$00,$01
 
             .ninji
                 ;db $A7,$A9                              ;$019C7D - Ninji

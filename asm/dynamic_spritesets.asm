@@ -116,6 +116,13 @@
         incsrc "original_sprites/wiggler.asm"
         incsrc "original_sprites/growing_pipe.asm"
         incsrc "original_sprites/bubble.asm"
+        incsrc "original_sprites/pokey.asm"
+        incsrc "original_sprites/volcano_lotus.asm"
+        incsrc "original_sprites/super_koopa.asm"
+        incsrc "original_sprites/sumo_bro.asm"
+        incsrc "original_sprites/carrot_lift.asm"
+        incsrc "original_sprites/timed_lift.asm"
+        incsrc "original_sprites/mega_mole.asm"
 
 ;################################################
 ;# Print info

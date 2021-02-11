@@ -12,11 +12,12 @@ find_and_queue_gfx:
 .init
     phy
     phx
+    php
     phb
     pea $4040                       ; set data bank $40 for easy access purposes
     plb
     plb
-
+    sep #$10
 
 .search_gfx
     ldx #$00
@@ -85,6 +86,7 @@ find_and_queue_gfx:
 
 ..tiles_loaded
     plb
+    plp
     plx
     ply
     sec
@@ -101,6 +103,7 @@ find_and_queue_gfx:
     bcs .get_unused_gfx_slot
 .abort_queue
     plb
+    plp
     plx
     ply
     clc
@@ -255,6 +258,7 @@ find_and_queue_gfx:
 
 .queue_end
     plb
+    plp
     plx
     ply
     clc

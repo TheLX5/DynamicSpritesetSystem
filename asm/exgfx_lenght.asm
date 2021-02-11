@@ -110,7 +110,7 @@ exgfx_lenght:
     db $02              ;# 6A - Balls
     db $01              ;# 6B - Reznor platform
     db $01              ;# 6C - Podoboo
-    db $0              ;# 6D - Gas bubble
+    db $08              ;# 6D - Gas bubble
     db $02              ;# 6E - Moving hole
     db $0              ;# 6F - Unused
     db $0              ;# 70 - Unused

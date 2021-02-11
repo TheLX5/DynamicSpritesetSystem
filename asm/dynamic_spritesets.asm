@@ -123,6 +123,16 @@
         incsrc "original_sprites/carrot_lift.asm"
         incsrc "original_sprites/timed_lift.asm"
         incsrc "original_sprites/mega_mole.asm"
+        incsrc "original_sprites/moving_hole.asm"
+        incsrc "original_sprites/boo_block.asm"
+        incsrc "original_sprites/big_boo.asm"
+        incsrc "original_sprites/fishin_boo.asm"
+        incsrc "original_sprites/gas_bubble.asm"
+        incsrc "original_sprites/boo_buddies.asm"
+        incsrc "original_sprites/boo_stream.asm"
+        incsrc "original_sprites/dinos.asm"
+        incsrc "original_sprites/hammer_bro.asm"
+        incsrc "original_sprites/coin_game_cloud.asm"
 
 ;################################################
 ;# Print info

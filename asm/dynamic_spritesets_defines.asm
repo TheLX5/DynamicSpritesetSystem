@@ -25,13 +25,13 @@ includeonce
 ;# 64 bytes
     !dss_map #= !dss_ram
 
-;# List of loaded GFX files
+;# List of IDs of the currently loaded GFX files.
 ;# FF = Invalid GFX
 ;# 32 bytes
     !dss_list #= !dss_map+64
 
 ;# Timer to mark as unused each GFX file
-;# Each GFX is marked as unused after 4 frames of being unused
+;# Each GFX is marked as unused after 16 frames of being unused
 ;# This is customizable in a global basis
     !dss_list_timer #= !dss_list+32
 
@@ -40,7 +40,7 @@ includeonce
     !dss_gfx_size #= !dss_list_timer+32
 
 ;# ExGFX usage map
-;# How many times was each GFX searched within a frame
+;# How many times each GFX was searched within a frame, if zero, the timer will start to tick down.
 ;# 32 bytes
     !dss_list_usage #= !dss_gfx_size+32
 
@@ -333,11 +333,11 @@ includeonce
     !dss_id_            ?= $DD
     !dss_id_            ?= $DE
     !dss_id_            ?= $DF
-    !dss_id_            ?= $E0
-    !dss_id_            ?= $E1
-    !dss_id_            ?= $E2
-    !dss_id_            ?= $E3
-    !dss_id_            ?= $E4
+    !dss_id_mushroom                ?= $E0
+    !dss_id_fire_flower             ?= $E1
+    !dss_id_feather                 ?= $E2
+    !dss_id_star                    ?= $E3
+    !dss_id_p_balloon               ?= $E4
     !dss_id_            ?= $E5
     !dss_id_            ?= $E6
     !dss_id_            ?= $E7
@@ -364,7 +364,7 @@ includeonce
     !dss_id_            ?= $FC
     !dss_id_            ?= $FD
     !dss_id_            ?= $FE
-    !dss_id_null            ?= $FF
+    !dss_id_null                    ?= $FF
 
 
 

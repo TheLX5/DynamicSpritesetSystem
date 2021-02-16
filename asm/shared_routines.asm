@@ -116,7 +116,7 @@ find_and_queue_gfx:
     cmp #$FF                        ; $FF = free gfx slot
     beq .fill_data
     iny 
-    cpy.b #64
+    cpy.b #32
     bcc ..loop
     bra .abort_queue                ; end the routine and don't fill up the queue if there aren't any free gfx slots
 
@@ -266,8 +266,8 @@ find_and_queue_gfx:
 
 
 buffer_locations:
-    db $20,$2C,$34,$40
-    db $4C,$54,$60,$6C
+    db $20,$2C,$38,$44
+    db $50,$5C,$68,$74
 
 gfx_decompression:
     rep #$20

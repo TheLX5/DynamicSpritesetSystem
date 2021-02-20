@@ -12,3 +12,11 @@ This whole repo still is being worked on. **Please come back later when an actua
 I will not provide any kind of support about this system. It's a very complex package that modifies a lot of parts of the ROM and providing support in such cases is outright impossible.
 
 Any question I receive will most likely replied with a link to the wiki unless it's a bug report about the API or any SMW sprite I've converted.
+
+### To do list
+- [ ] Convert & evaluate SMW's sprites (some don't require conversion for DSS)
+- [x] Write documentation about the API
+- [ ] Write code examples
+- [ ] Set up the wiki (faq, installation process, etc)
+- [ ] Add custom displays for each sprite in Lunar Magic
+- [ ] Test stability

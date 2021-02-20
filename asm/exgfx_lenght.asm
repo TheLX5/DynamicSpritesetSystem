@@ -112,12 +112,12 @@ exgfx_lenght:
     db $01              ;# 6C - Podoboo
     db $08              ;# 6D - Gas bubble
     db $02              ;# 6E - Moving hole
-    db $0              ;# 6F - Unused
-    db $0              ;# 70 - Unused
-    db $0              ;# 71 - Unused
-    db $0              ;# 72 - Unused
-    db $0              ;# 73 - Unused
-    db $0              ;# 74 - Unused
+    db $01              ;# 6F - Red coin
+    db $01              ;# 70 - Key
+    db $01              ;# 71 - Keyhole
+    db $01              ;# 72 - Goal tape
+    db $02              ;# 73 - P-Switch
+    db $01              ;# 74 - Info box
     db $0              ;# 75 - Unused
     db $0              ;# 76 - Unused
     db $0              ;# 77 - Unused
@@ -225,11 +225,11 @@ exgfx_lenght:
     db $0              ;# DD - Unused
     db $0              ;# DE - Unused
     db $0              ;# DF - Unused
-    db $0              ;# E0 - Unused
-    db $0              ;# E1 - Unused
-    db $0              ;# E2 - Unused
-    db $0              ;# E3 - Unused
-    db $0              ;# E4 - Unused
+    db $01              ;# E0 - Mushroom
+    db $01              ;# E1 - Fire Flower
+    db $01              ;# E2 - Feather
+    db $01              ;# E3 - Star
+    db $01              ;# E4 - P-Balloon
     db $0              ;# E5 - Unused
     db $0              ;# E6 - Unused
     db $0              ;# E7 - Unused
@@ -255,5 +255,5 @@ exgfx_lenght:
     db $0              ;# FB - Unused
     db $0              ;# FC - Unused
     db $0              ;# FD - Unused
-    db $0              ;# FE - Unused
+    db $01              ;# FE - Bonus box
     db $FF              ;# FF - NULL, DONT USE

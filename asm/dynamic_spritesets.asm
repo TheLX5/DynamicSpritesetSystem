@@ -56,13 +56,11 @@
     org $03C000
         GenTileFromSpr2:
 
-;################################################
-;# Debug flag
-
-    !debug = 0
+    org $01E700
+        SmushedGfxRt:
     
 ;################################################
-;# Inserts ASM
+;# Search freespace
 
     freecode
 
@@ -73,13 +71,24 @@
         incsrc "exgfx_lenght.asm"
         incsrc "exgfx_ids.asm"
         incsrc "tweaker.asm"
+        incsrc "remaps.asm"
         incsrc "shared_routines.asm"
 
 ;################################################
 ;# Includes edits SMW's sprites
 
+        incsrc "original_sprites/smoke_sprites.asm"
         incsrc "original_sprites/generators.asm"
         incsrc "original_sprites/shared_gfx_routines.asm"
+        incsrc "original_sprites/smushed_sprites.asm"
+        incsrc "original_sprites/powerups.asm"
+        incsrc "original_sprites/key.asm"
+        incsrc "original_sprites/keyhole.asm"
+        incsrc "original_sprites/goal_tape.asm"
+        incsrc "original_sprites/yoshi_egg.asm"
+        incsrc "original_sprites/info_box.asm"
+        incsrc "original_sprites/p_switch.asm"
+        incsrc "original_sprites/growing_vine.asm"
         incsrc "original_sprites/rex.asm"
         incsrc "original_sprites/pipe_lakitu.asm"
         incsrc "original_sprites/bullet_bills.asm"
@@ -141,34 +150,5 @@
     print "Version 0.0.1"
     print "by lx5"
     print ""
+    print "Bytes modified: ", bytes," bytes."
     print "Freespace used: ", freespaceuse," bytes."
-
-if !debug == 1
-
-    print ""
-    print " ################################ RAM INFO ################################ "
-    print ""
-    print "\!dss_map                     = $", hex(!dss_map)
-    print "\!dss_list                    = $", hex(!dss_list)
-    print "\!dss_gfx_size                = $", hex(!dss_gfx_size)
-    print "\!dss_list_usage              = $", hex(!dss_list_usage)
-    print "\!dss_tile_buffer             = $", hex(!dss_tile_buffer)
-    print "\!dss_tile_buffer_complete    = $", hex(!dss_tile_buffer_complete)
-    print "\!dss_ram_buffer_index        = $", hex(!dss_ram_buffer_index)
-    print "\!dss_maximum_tiles           = $", hex(!dss_maximum_tiles)
-    print "\!dss_loaded_tiles            = $", hex(!dss_loaded_tiles)
-    print "\!dss_gfx_queue               = $", hex(!dss_gfx_queue)
-    print "\!dss_gfx_queue_index_nmi     = $", hex(!dss_gfx_queue_index_nmi)
-    print "\!dss_gfx_queue_index_game    = $", hex(!dss_gfx_queue_index_game)
-    print "\!dss_vram_dest               = $", hex(!dss_vram_dest)
-    print ""
-    print " ################################ ROUTINE INFO ################################ "
-    print ""
-    print "find_and_queue_gfx           = $", hex(find_and_queue_gfx)
-    print ""
-    print " ################################ ASM HACKS INFO ################################ "
-    print ""
-    print "garbage_collector            = $", hex(garbage_collector)
-    print ""
-
-endif

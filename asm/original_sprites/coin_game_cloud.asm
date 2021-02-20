@@ -1,10 +1,10 @@
 pushpc
     org $02EF2E
-        db $60          ; cloud tile
+        db !smoke_large_tile            ; cloud tile
     org $02EF56
-        db $6F          ; face tile
+        db !cloud_face_tile             ; face tile
     org $02EF5B
-        db $38          ; face props
+        db $38                          ; face props
     org $029D4A
         coin_game_write_hijack:
             jml coin_game_write

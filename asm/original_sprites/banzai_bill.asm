@@ -15,10 +15,6 @@ pushpc
             clc
             adc.w $D5A4,x
             sta $0300|!addr,y
-            lda $01
-            clc 
-            adc.w $D5B4,x
-            sta $0301|!addr,y
             jsl banzai_bill_gfx_routine_aux
             dex 
             bpl .loop
@@ -27,6 +23,12 @@ pushpc
             lda #$0F
             jmp $B7A7
 
+        basic_configuration:
+            dl !dss_ram                         ; this section gets read by other resources
+            dw !dss_exgfx                       ; to grab useful info about this patch
+            db !dss_queue_tiles
+            db !dss_time_to_unmark_gfx
+            
         warnpc $02D617
 
     org $02D5C4
@@ -39,6 +41,10 @@ pullpc
 
 
     banzai_bill_gfx_routine_aux:
+        lda $01
+        clc 
+        adc.w $D5B4,x
+        sta $0301|!addr,y
         lda.w banzai_bill_tiles,x
         phx
         tax

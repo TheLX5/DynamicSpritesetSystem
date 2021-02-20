@@ -253,35 +253,35 @@ exgfx_ids:
 ;.73 Super Koopa, feather
     db !dss_id_super_koopa
 ;.74 Mushroom
-    db !dss_id_null
+    db !dss_id_mushroom
 ;.75 Flower
-    db !dss_id_null
+    db !dss_id_fire_flower
 ;.76 Star
-    db !dss_id_null
+    db !dss_id_star
 ;.77 Feather
-    db !dss_id_null
+    db !dss_id_feather
 ;.78 1-Up
-    db !dss_id_null
+    db !dss_id_mushroom
 ;.79 Growing Vine
     db !dss_id_piranha_plant
 ;.7A Firework
     db !dss_id_null
 ;.7B Goal Point
-    db !dss_id_null
+    db !dss_id_goal_tape
 ;.7C Princess Peach
     db !dss_id_null
 ;.7D Balloon
-    db !dss_id_null
+    db !dss_id_p_balloon
 ;.7E Flying Red coin
-    db !dss_id_null
+    db !dss_id_red_coin
 ;.7F Flying yellow 1-Up
-    db !dss_id_null
+    db !dss_id_mushroom
 ;.80 Key
     db !dss_id_null
 ;.81 Changing item from translucent block
     db !dss_id_null
 ;.82 Bonus game sprite
-    db !dss_id_null
+    db !dss_id_bonus_box
 ;.83 Left flying question block
     db !dss_id_null
 ;.84 Flying question block

@@ -24,6 +24,7 @@ late_game_wrapper:
     jsl fill_sprites
     jml garbage_collector
 
+
 ;#########################################################################
 ;# Load sprite GFXs
 ;# 

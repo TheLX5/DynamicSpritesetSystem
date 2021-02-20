@@ -145,9 +145,13 @@ pushpc
                 ;db $A2,$A2,$B2,$B2                      ;$019C13 - Thwimp (4-byte)
                 db $00,$00,$02,$02
 
+            .yoshi_eggs
+                ;db $00                                  ;$019C17 - Stunned Yoshi Egg
+                db $00
+
             .null_4
-                ;db $00,$40,$44,$42,$2C,$42              ;$019C17 - ???
-                db $00,$40,$44,$42,$2C,$42
+                ;db $40,$44,$42,$2C,$42                  ;$019C18 - ???
+                db $40,$44,$42,$2C,$42
 
             .springboard
                 ;db $28,$28,$28,$28,$4C,$4C,$4C,$4C      ;$019C1D - Springboard (4-byte)
@@ -603,9 +607,12 @@ pullpc
             ;db $A2,$A2,$B2,$B2                      ;$019C13 - Thwimp (4-byte)
             db !dss_id_thwimp, !dss_id_thwimp, !dss_id_thwimp, !dss_id_thwimp
 
+        .yoshi_egg_stunned
+            ;db $00                                  ;$019C17 - Yoshi Egg
+            db !dss_id_yoshi_eggs
         .null_4
-            ;db $00,$40,$44,$42,$2C,$42              ;$019C17 - ???
-            db !dss_id_null, !dss_id_null, !dss_id_null, !dss_id_null
+            ;db $40,$44,$42,$2C,$42                  ;$019C18 - ???
+            db !dss_id_null, !dss_id_null, !dss_id_null
             db !dss_id_null, !dss_id_null
 
         .springboard

@@ -9,13 +9,73 @@ includeonce
 ;# How many tiles from the queue will be uploaded per frame
     !dss_queue_tiles = 6
 
-;# 
+;# How many frames are needed to mark a GFX as unused
     !dss_time_to_unmark_gfx = 16
 
 ;# Main RAM defines
 ;# Requires at least 1541 (0x605) bytes of consecutive free RAM
 ;# or you could edit the defines below to make some of them not consecutive
-    !dss_ram = $404000
+    !dss_ram = $40C000
+
+;#########################################################################
+;# Remap stuff
+
+    !small_wing_tile            = $5D
+    !big_wing_tile              = $4E
+
+    !lava_particle_large_tile   = $42
+    !lava_particle_medium_tile  = $52
+    !lava_particle_small_tile   = $43
+    !lava_particle_tiny_tile    = $53
+
+    !spinjump_star_tile         = $28
+
+    !glitter_large_tile         = $4C
+    !glitter_medium_tile        = $6E
+    !glitter_small_tile         = $4D
+    !glitter_tiny_tile          = $66
+
+    !sparkle_large_tile         = $5C
+    !sparkle_medium_tile        = $6C
+    !sparkle_small_tile         = $6D
+
+    !smoke_large_tile           = $60
+    !smoke_medium_tile          = $62
+    !smoke_small_tile           = $64
+    !smoke_tiny_tile            = $66
+
+    !tiny_smoke_large_tile      = $62
+    !tiny_smoke_medium_tile     = $64
+    !tiny_smoke_small_tile      = $66
+
+    !broken_brick_1_tile        = $3C
+    !broken_brick_2_tile        = $3D
+
+    !yoshi_tongue_tip_tile      = $48
+    !yoshi_tongue_body_tile     = $49
+    !yoshi_throat_tile          = $58
+    !yoshi_egg_tile             = $59
+    !yoshi_fire_1_tile          = $82
+    !yoshi_fire_2_tile          = $84
+
+    !berry_tile                 = $80
+
+    !coin_large_tile            = $24
+    !coin_rotating_tile         = $26
+    !coin_slim_tile             = $36
+
+    !cloud_face_tile            = $6F
+
+    !explosion_tile             = $27
+
+    !water_bubble_tile          = $37
+
+    !question_block_tile        = $2A
+    !brown_block_tile           = $2E
+    !turn_block_tile            = $40
+    !note_block_tile            = $86
+    !glass_block_tile           = $88
+    !on_off_block_tile          = $8A
 
 ;####################################################################
 ;# RAM defines
@@ -33,6 +93,7 @@ includeonce
 ;# Timer to mark as unused each GFX file
 ;# Each GFX is marked as unused after 16 frames of being unused
 ;# This is customizable in a global basis
+;# 32 bytes
     !dss_list_timer #= !dss_list+32
 
 ;# Amount of tiles used by each loaded GFX
@@ -52,11 +113,18 @@ includeonce
 ;# 1024 bytes
     !dss_tile_buffer_complete #= !dss_tile_buffer+32
 
-;# Buffer index
+;# Index used to select one of the eight possible buffers to decompress RAM to
 ;# 1 byte
     !dss_ram_buffer_index #= !dss_tile_buffer_complete+1024
 
+;# Holds the maximum amount of tiles used by DSS.
+;# Can be modified. Can't be over 64 or bad things will happen.
+;# 1 byte
     !dss_maximum_tiles #= !dss_ram_buffer_index+1
+
+;# Holds the current amount of tiles used by DSS
+;# It can't exceed !dss_maximum_tiles
+;# 1 byte
     !dss_loaded_tiles #= !dss_maximum_tiles+1
 
 ;# Queue of pending graphics to be uploaded to VRAM
@@ -220,12 +288,12 @@ includeonce
     !dss_id_podoboo                 ?= $6C
     !dss_id_gas_bubble              ?= $6D
     !dss_id_moving_hole             ?= $6E
-    !dss_id_            ?= $6F
-    !dss_id_            ?= $70
-    !dss_id_            ?= $71
-    !dss_id_            ?= $72
-    !dss_id_            ?= $73
-    !dss_id_            ?= $74
+    !dss_id_red_coin                ?= $6F
+    !dss_id_key                     ?= $70
+    !dss_id_keyhole                 ?= $71
+    !dss_id_goal_tape               ?= $72
+    !dss_id_p_switch                ?= $73
+    !dss_id_info_fox                ?= $74
     !dss_id_            ?= $75
     !dss_id_            ?= $76
     !dss_id_            ?= $77
@@ -363,7 +431,7 @@ includeonce
     !dss_id_            ?= $FB
     !dss_id_            ?= $FC
     !dss_id_            ?= $FD
-    !dss_id_            ?= $FE
+    !dss_id_bonus_box               ?= $FE
     !dss_id_null                    ?= $FF
 
 

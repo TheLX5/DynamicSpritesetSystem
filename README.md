@@ -9,7 +9,7 @@ This whole repo still is being worked on. **Please come back later when an actua
 * VRAM queue system; used to fill the VRAM at the sprite area, but it may be used for something else
 
 ### Disclaimer
-This project was started to nullify the time spent building manually a spriteset for my very own purposes and took decision that fulfilled my requirements, if you find anything that isn't ideal for your very own project I'm sorry about that, but it's not likely that any changes will be made for your specific purposes.
+This project was started to completely remove the time spent building manually a spriteset for my very own purposes and took decisions that fulfilled my requirements. If you find anything that isn't ideal for your very own project I'm sorry about that, but it's not likely that any changes will be made for your specific purposes.
 
 I will not provide any kind of support about this system. It's a very complex package that modifies a lot of parts of the ROM and providing support in such cases is outright impossible.
 

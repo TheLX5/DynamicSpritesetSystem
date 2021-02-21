@@ -1,7 +1,6 @@
 pushpc
 
-
-    org $018DF1
+    org $018DE1
         goomba_wings_tilemap:
             db !big_wing_tile,!big_wing_tile
             db !small_wing_tile,!small_wing_tile

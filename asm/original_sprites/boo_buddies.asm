@@ -12,6 +12,14 @@ pullpc
 
     boo_buddies_write:
         pha
+        lda $02,s
+        tax 
+        lda $1892|!addr,x
+        cmp #$08
+        bne .boo
+        plx 
+        bra .return 
+    .boo 
         lda.b #!dss_id_boo
         jsl find_and_queue_gfx
         plx

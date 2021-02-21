@@ -84,7 +84,7 @@ exgfx_lenght:
     db $05              ;# 50 - Porcu-puffer
     db $07              ;# 51 - Super koopa
     db $01              ;# 52 - Mushroom scale
-    db $03              ;# 53 - Rock platform
+    db $04              ;# 53 - Rock platform
     db $04              ;# 54 - Orange platform
     db $02              ;# 55 - Spiky balls
     db $01              ;# 56 - Goal question sphere
@@ -97,7 +97,7 @@ exgfx_lenght:
     db $0D              ;# 5D - Dino rhino
     db $05              ;# 5E - Dino torch
     db $08              ;# 5F - Dino fire
-    db $08              ;# 60 - Mecha-koopa
+    db $09              ;# 60 - Mecha-koopa
     db $05              ;# 61 - Bowling ball
     db $03              ;# 62 - Brown platform
     db $01              ;# 63 - Brown platform chain

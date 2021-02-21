@@ -89,6 +89,7 @@
         incsrc "original_sprites/info_box.asm"
         incsrc "original_sprites/p_switch.asm"
         incsrc "original_sprites/growing_vine.asm"
+        incsrc "original_sprites/piranha_plants.asm"
         incsrc "original_sprites/rex.asm"
         incsrc "original_sprites/pipe_lakitu.asm"
         incsrc "original_sprites/bullet_bills.asm"
@@ -142,6 +143,17 @@
         incsrc "original_sprites/dinos.asm"
         incsrc "original_sprites/hammer_bro.asm"
         incsrc "original_sprites/coin_game_cloud.asm"
+        incsrc "original_sprites/platforms.asm"
+        incsrc "original_sprites/floating_skulls.asm"
+        incsrc "original_sprites/swooper_bat.asm"
+        incsrc "original_sprites/rope_mechanism.asm"
+        incsrc "original_sprites/chainsaw.asm"
+        incsrc "original_sprites/fuzzy.asm"
+        incsrc "original_sprites/mechakoopa.asm"
+        incsrc "original_sprites/floating_spike_ball.asm"
+        incsrc "original_sprites/blargg.asm"
+        incsrc "original_sprites/spotlight.asm"
+        incsrc "original_sprites/item_box.asm"
 
 ;################################################
 ;# Print info

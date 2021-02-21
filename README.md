@@ -16,7 +16,7 @@ I will not provide any kind of support about this system. It's a very complex pa
 Any question I receive will most likely replied with a link to the wiki unless it's a bug report about the API or any SMW sprite I've converted.
 
 ### To do list
-- [ ] Convert & evaluate SMW's sprites (some don't require conversion for DSS)
+- [x] Convert & evaluate SMW's sprites (some don't require conversion for DSS)
 - [x] Write documentation about the API
 - [ ] Write code examples
 - [ ] Set up the wiki (faq, installation process, etc)

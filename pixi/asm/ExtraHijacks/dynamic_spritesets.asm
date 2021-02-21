@@ -6,11 +6,6 @@
 ;# This file has everything needed for the original sprites to properly
 ;# make use of the dynamic spriteset system
 ;#
-;# TO DO:
-;#  - Use MaxTile API directly instead of working with the OAM mirror for
-;#    proper priorities between sprites
-;#  - Make most of SMW sprites use DSS natively
-
 
 ;################################################
 ;# Ensure SA-1 only compatibility

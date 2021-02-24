@@ -7,6 +7,8 @@ This whole repo still is being worked on. **Please come back later when an actua
 * Lunar Magic's ExGFX system to store sprite graphics
 * Lunar Magic's sprites showing fine regardless of the loaded ExGFX
 * VRAM queue system; used to fill the VRAM at the sprite area, but it may be used for something else
+* Yoshi can exist in any environment, it can also coexist alongside Podoboos
+* Glass, ON/OFF and note blocks are now global
 
 ### Disclaimer
 This project was started to completely remove the time spent building manually a spriteset for my very own purposes and took decisions that fulfilled my requirements. If you find anything that isn't ideal for your very own project I'm sorry about that, but it's not likely that any changes will be made for your specific purposes.

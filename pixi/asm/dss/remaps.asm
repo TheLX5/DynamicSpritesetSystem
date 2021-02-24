@@ -77,6 +77,16 @@ pushpc
     org $028EB2
         yoshi_egg_piece_tilemap:
             db !yoshi_egg_tile
+    org $028EBC
+        yoshi_egg_piece_props:
+            db $02
+
+    org $01F08B
+        yoshi_throat_tilemap:
+            db !yoshi_throat_tile
+    org $01F097
+        yoshi_throat_props:
+            db $00
 
     org $029F5C
         water_bubble_tilemap:

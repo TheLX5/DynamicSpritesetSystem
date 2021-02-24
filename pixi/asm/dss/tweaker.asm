@@ -9,7 +9,7 @@ pushpc
         db $85,$0B,$09,$01,$13,$15,$09,$4F		; f = disable fireball killing
 
         db $1C,$24,$0B,$09,$0B,$09,$33,$33		; ppp = palette
-        db $FD,$2B,$09,$35,$3A,$3A,$19,$3B		; g = use second graphics page
+        db $FD,$2B,$09,$35,$3B,$3A,$19,$3B		; g = use second graphics page
 
         db $13,$13,$13,$34,$39,$2A,$15,$F3
         db $FD,$FD,$37,$37,$37,$C7,$31,$05

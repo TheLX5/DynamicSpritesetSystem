@@ -17,6 +17,9 @@ pushpc
         warnpc $01F7C1
     org $01F7C1
         hatching_egg_write_end:
+    org $018335
+        yoshi_egg_props_2:
+            db $09,$07,$05,$07
 
 pullpc
 

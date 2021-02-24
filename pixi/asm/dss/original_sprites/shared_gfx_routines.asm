@@ -286,6 +286,8 @@ pushpc
             pei ($00)
             ldy !9E,x
             lda !1602,x
+            cmp #$FF
+            beq .original
             clc
             adc.w shared_sprite_offset,y
             tax
@@ -305,9 +307,9 @@ pushpc
         .original
             jml third_shared_gfx_original
 
-        warnpc $019F40
+        warnpc $019F44
 
-    org $019F40
+    org $019F44
         third_shared_gfx_end:
 pullpc
 
@@ -467,6 +469,9 @@ pullpc
         lsr 
         lda #$00
         ora !15F6,x
+        bcs .flip
+        eor #$40
+    .flip
         jml third_shared_gfx_end
 
     third_shared_gfx:

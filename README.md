@@ -1,6 +1,5 @@
 ## Dynamic Spriteset System
 This package of ASM hacks allows the users to automatically fill their VRAM area dedicated to Sprite GFX.
-This whole repo still is being worked on. **Please come back later when an actual release happens or if you really want to contribute something**.
 
 ### Features
 * Easy to use API, just call a routine to do the heavy work for you

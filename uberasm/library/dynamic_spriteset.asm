@@ -1,19 +1,22 @@
 ;#########################################################################
 ;# Customization defines
 
+;# Location of the configuration used in the main patch.
+    !dss_config = $02D60B
+
 ;# Starting ExGFX ID for the dynamic spritesets
-    !dss_exgfx = $0D00
+    !dss_exgfx = read2(!dss_config+3)
 
 ;# How many tiles from the queue will be uploaded per frame
-    !dss_queue_tiles = 6
+    !dss_queue_tiles = read1(!dss_config+5)
 
-;# 
-    !dss_time_to_unmark_gfx = 16
+;# How many frames are needed to mark a GFX as unused
+    !dss_time_to_unmark_gfx = read1(!dss_config+6)
 
-;# Main RAM defines
-;# Requires at least 1541 (0x605) bytes of consecutive free RAM
+;# Main RAM define
+;# Requires at least 1745 (0x6D1) bytes of consecutive free RAM
 ;# or you could edit the defines below to make some of them not consecutive
-    !dss_ram = $404000
+    !dss_ram = read3(!dss_config)
 
 ;####################################################################
 ;# RAM defines
@@ -23,14 +26,15 @@
 ;# 64 bytes
     !dss_map #= !dss_ram
 
-;# List of loaded GFX files
+;# List of IDs of the currently loaded GFX files.
 ;# FF = Invalid GFX
 ;# 32 bytes
     !dss_list #= !dss_map+64
 
 ;# Timer to mark as unused each GFX file
-;# Each GFX is marked as unused after 4 frames of being unused
+;# Each GFX is marked as unused after 16 frames of being unused
 ;# This is customizable in a global basis
+;# 32 bytes
     !dss_list_timer #= !dss_list+32
 
 ;# Amount of tiles used by each loaded GFX
@@ -38,7 +42,7 @@
     !dss_gfx_size #= !dss_list_timer+32
 
 ;# ExGFX usage map
-;# How many times was each GFX searched within a frame
+;# How many times each GFX was searched within a frame, if zero, the timer will start to tick down.
 ;# 32 bytes
     !dss_list_usage #= !dss_gfx_size+32
 
@@ -50,11 +54,18 @@
 ;# 1024 bytes
     !dss_tile_buffer_complete #= !dss_tile_buffer+32
 
-;# Buffer index
+;# Index used to select one of the eight possible buffers to decompress RAM to
 ;# 1 byte
     !dss_ram_buffer_index #= !dss_tile_buffer_complete+1024
 
+;# Holds the maximum amount of tiles used by DSS.
+;# Can be modified. Can't be over 64 or bad things will happen.
+;# 1 byte
     !dss_maximum_tiles #= !dss_ram_buffer_index+1
+
+;# Holds the current amount of tiles used by DSS
+;# It can't exceed !dss_maximum_tiles
+;# 1 byte
     !dss_loaded_tiles #= !dss_maximum_tiles+1
 
 ;# Queue of pending graphics to be uploaded to VRAM
@@ -190,7 +201,7 @@ init:
     stz.w !dss_gfx_queue_index_game
     stz.w !dss_ram_buffer_index
 
-    lda #$0064
+    lda.w #0064
     sta.w !dss_maximum_tiles
 
     lda #$FFFF

@@ -105,8 +105,9 @@ pushpc
             db !coin_rotating_tile
 
     org $029A4B
+            sta $0201|!addr,y
         spinning_coin_large_tilemap:
-            db !coin_large_tile
+            lda.b #!coin_large_tile
     org $029A6E
         spinning_coin_small_tilemap:
             db !coin_rotating_tile

@@ -18,7 +18,7 @@ Any question I receive will most likely replied with a link to the wiki unless i
 ### To do list
 - [x] Convert & evaluate SMW's sprites (some don't require conversion for DSS)
 - [x] Write documentation about the API
-- [ ] Write code examples
+- [x] Write code examples
 - [ ] Set up the wiki (faq, installation process, etc)
-- [ ] Add custom displays for each sprite in Lunar Magic
+- [x] Add custom displays for each sprite in Lunar Magic
 - [ ] Test stability

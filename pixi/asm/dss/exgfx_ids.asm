@@ -49,7 +49,7 @@ exgfx_ids:
 ;.0D Bob-omb
     db !dss_id_bobomb
 ;.0E Keyhole
-    db !dss_id_null
+    db !dss_id_keyhole
 ;.0F Goomba
     db !dss_id_goomba
 ;.10 Bouncing Goomba with wings
@@ -73,7 +73,7 @@ exgfx_ids:
 ;.19 Display text from level Message Box #1
     db !dss_id_null
 ;.1A Classic Piranha Plant
-    db !dss_id_null
+    db !dss_id_piranha_plant
 ;.1B Bouncing football in place
     db !dss_id_football
 ;.1C Bullet Bill
@@ -105,7 +105,7 @@ exgfx_ids:
 ;.29 Koopa Kid
     db !dss_id_null
 ;.2A Upside down Piranha Plant
-    db !dss_id_null
+    db !dss_id_piranha_plant
 ;.2B Sumo Brother's fire lightning
     db !dss_id_sumo_bro_lightning
 ;.2C Yoshi egg
@@ -145,7 +145,7 @@ exgfx_ids:
 ;.3D Rip Van Fish
     db !dss_id_rip_van_fish
 ;.3E POW
-    db !dss_id_null
+    db !dss_id_p_switch
 ;.3F Para-Goomba
     db !dss_id_paragoomba
 ;.40 Para-Bomb
@@ -277,7 +277,7 @@ exgfx_ids:
 ;.7F Flying yellow 1-Up
     db !dss_id_mushroom
 ;.80 Key
-    db !dss_id_null
+    db !dss_id_key
 ;.81 Changing item from translucent block
     db !dss_id_null
 ;.82 Bonus game sprite
@@ -359,7 +359,7 @@ exgfx_ids:
 ;.A8 Blargg
     db !dss_id_blarrg
 ;.A9 Reznor
-    db !dss_id_reznor
+    db !dss_id_null
 ;.AA Fishbone
     db !dss_id_fishbone
 ;.AB Rex
@@ -391,7 +391,7 @@ exgfx_ids:
 ;.B8 Carrot Top lift, upper left
     db !dss_id_carrot_platform
 ;.B9 Info Box
-    db !dss_id_null
+    db !dss_id_info_fox
 ;.BA Timed lift
     db !dss_id_timed_platform
 ;.BB Grey moving castle block

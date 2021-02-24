@@ -68,7 +68,7 @@ pullpc
         db !dss_id_goomba
         db !dss_id_bobomb
         db !dss_id_cheep_cheep
-        db !dss_id_null
+        db !dss_id_mushroom
 
     bubble_shine_load:
         lda.b #!dss_id_misc_tiles_2

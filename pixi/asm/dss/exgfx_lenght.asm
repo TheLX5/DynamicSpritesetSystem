@@ -4,7 +4,7 @@ exgfx_lenght:
     db $05              ;# 00 - Koopa
     db $03              ;# 01 - Koopa shell
     db $05              ;# 02 - Shelless Koopa (Red, Green, Yellow)
-    db $04              ;# 03 - Shelless Koopa (Blue)
+    db $05              ;# 03 - Shelless Koopa (Blue)
     db $02              ;# 04 - Goomba
     db $02              ;# 05 - Piranha plant head
     db $01              ;# 06 - Misc tiles (piranha plant stem, flat koopa)

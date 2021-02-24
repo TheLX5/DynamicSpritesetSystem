@@ -53,7 +53,7 @@ pushpc
             ;# Signature
                 db "DSS"
             ;# Version number
-                dw 0002
+                dw 0003
         warnpc $01DF91
     org $01DF91
         bonus_items_write_end:

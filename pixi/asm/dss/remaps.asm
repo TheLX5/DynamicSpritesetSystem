@@ -88,6 +88,16 @@ pushpc
         yoshi_throat_props:
             db $00
 
+    org $029F7A
+        yoshi_fireball_tilemap_1:
+            db !yoshi_fire_1_tile
+    org $029F7E
+        yoshi_fireball_tilemap_2:
+            db !yoshi_fire_2_tile
+    org $029F8B
+        yoshi_fireball_prop:
+            db $34
+
     org $029F5C
         water_bubble_tilemap:
             db !water_bubble_tile

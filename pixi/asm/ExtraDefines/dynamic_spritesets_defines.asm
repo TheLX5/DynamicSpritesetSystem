@@ -53,8 +53,8 @@
     !yoshi_tongue_body_tile     = $49
     !yoshi_throat_tile          = $58
     !yoshi_egg_tile             = $59
-    !yoshi_fire_1_tile          = $82
-    !yoshi_fire_2_tile          = $84
+    !yoshi_fire_1_tile          = $8C
+    !yoshi_fire_2_tile          = $8E
 
     !berry_tile                 = $80
 

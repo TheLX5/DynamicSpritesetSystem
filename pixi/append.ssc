@@ -1,0 +1,1152 @@
+; External GFX setup
+10000 0 400-69F,0 6A0-6FF,400
+
+; Shelless koopas
+00 0002 0,1,400
+01 0002 0,1,401
+02 0002 0,1,402
+03 0002 0,1,403
+
+; Koopas
+04 0002 0,-14,410 0,2,420
+05 0002 0,-14,411 0,2,421
+06 0002 0,-14,412 0,2,422
+07 0002 0,-14,413 0,2,423
+
+; Green parakoopa
+08 0002 0,-14,410 0,2,420 9,-10,424
+
+; Green bouncing parakoopa
+09 0002 0,-14,410 0,2,420 9,-11,414 
+09 1002 0,-15,410 0,1,430 9,-11,424
+
+; Red parakoopa
+0A 0002 0,-14,411 0,2,421 9,-11,414 
+0B 0002 0,-14,411 0,2,421 9,-10,424
+
+; Yellow parakoopa
+0C 0002 0,-14,413 0,2,423 9,-11,414 
+
+; Bob-omb
+0D 0002 0,1,427
+
+; Keyhole
+0E 0002 0,1,407
+
+; Goomba
+0F 0002 0,1,426
+
+; Paragoomba
+10 0002 -10,-7,415 0,1,426 13,-7,414
+
+; Buzzy beetle
+11 0002 0,1,428
+
+; Null
+12 0002 0,0,116
+
+; Spiny
+13 0002 0,1,429
+
+; Spiny egg
+14 0002 0,1,42A
+
+; Cheep-cheep/fish
+15 0002 0,1,42B
+16 0002 0,1,42C
+17 0002 0,1,42B
+18 0002 0,1,42B
+
+; Display message
+19 0002 0,0,*Display Level\n  Message 1  *
+
+; Classic piranha plant
+1A 0002 8,-15,41A 8,-31,419
+
+; Football
+1B 0002 0,1,42D
+
+; Bullet bill
+1C 0002 0,1,41E
+
+; Hopping flame
+1D 0002 0,1,434
+
+; Lakitu
+1E 0002 -5,0,40C 5,1,40C    1,-16,43E 1,0,44E    3,4,40C -3,4,40C 4,8,40E
+1E 0102 -5,0,40C 5,1,40C    -12,-14,43F -20,-14,44F -20,2,44F -20,18,44F -20,34,44F -20,50,4D4    1,-16,43E 1,0,44E     3,4,40C -3,4,40C 4,8,40E
+
+; Magikoopa
+1F 0002 0,1,454 0,-15,444
+
+; Magikoopa magic
+20 0002 4,0,435 -4,8,445 12,8,455
+
+; Moving coin
+21 0002 0,1,4D5
+
+; Net koopas
+22 0002 0,-4,43D 0,12,44D
+22 0102 0,-4,43C 0,12,44C
+23 0002 0,-4,45D 0,12,46D
+23 0102 0,-4,45C 0,12,46C
+24 0002 0,-4,43B 0,12,44B
+24 0102 0,-4,43A 0,12,44A
+25 0002 0,-4,45B 0,12,46B
+25 0102 0,-4,45A 0,12,46A
+
+; Thwomp
+26 0002 4,1,436 20,1,437 4,17,446, 20,17,447
+
+; Thwimp
+27 0002 0,1,439
+
+; Big boo
+28 0002 -7,24,4C9  -4,0,494 12,0,495 28,0,496 44,0,497 -4,16,4A4 12,16,4A5 28,16,4A6 44,16,4A7 -4,32,4B4 12,32,4B5 28,32,4B6 44,32,4B7 -4,48,4C4 12,48,4C5 28,48,4C6 44,48,4C7   4,18,4B8 4,34,4C8   29,24,4B9
+
+; Boss
+29 0002 0,0,*MAY GLITCH!*
+
+; Upsidedown piranha plant
+2A 0002 8,15,458 8,31,457
+
+; Sumo bro. lightning bolt
+2B 0002 0,0,47A
+
+; Yoshi egg
+2C 0002 0,1,481
+2C 0102 0,1,482
+2C 0202 0,1,483
+2C 0302 0,1,482
+
+; Baby yoshi
+2D 0002 0,1,470
+
+; Spike top
+2E 0002 0,1,47B
+
+; Springboard
+2F 0002 0,1,490
+
+; Dry bones, throw bones
+30 0002 0,-11,469 0,1,468 -8,-15,466
+
+; Bony beetle
+31 0002 0,1,449
+
+; Dry bones, throw bones
+32 0002 0,1,467 -8,-15,466
+
+; Podoboo
+33 0002 0,0,474 7,20,45F 2,36,46E
+
+; Boss fireball
+;34 0002 0,0,0
+
+; Yoshi
+35 0002 -10,1,450 0,17,460
+
+; Null
+36 0002 0,0,116
+
+; Boo
+37 0002 0,1,486
+
+; Eerie
+38 0002 0,1,485
+39 0002 0,1,484
+
+; Urchins
+3A 0002 0,0,520 0,16,530 16,16,531 16,0,521 8,9,510
+3A 0102 0,0,520 0,16,530 16,16,531 16,0,521 8,9,511
+
+3B 0002 0,0,540 0,16,550 16,16,551 16,0,541 8,9,510
+3B 0102 0,0,540 0,16,550 16,16,551 16,0,541 8,9,511
+
+3C 0002 0,0,560 0,16,570 16,16,571 16,0,561 8,9,510
+3C 0102 0,0,560 0,16,570 16,16,571 16,0,561 8,9,511
+
+; Rip van fish
+3D 0002 0,1,512 8,-7,514 16,-15,523
+
+; POW / P-Switch
+3E 0002 0,1,4A2
+3E 0102 0,1,405
+
+; Para goomba
+3F 0002 -6,-14,47E -6,2,48E
+
+; Para bob-omb
+40 0002 -6,-14,47E -6,2,48F
+
+; Dolphin, horizontal
+41 0002 0,1,532 16,1,533 32,1,534
+
+; Dolphin 2, horizontal
+42 0002 0,1,542 16,1,543 32,1,544
+
+; Dolphin, vertical
+43 0002 0,1,535 0,17,545
+
+; Torpedo ted
+44 0002 0,1,501 16,1,502 -12,1,525
+
+; Directional coins
+45 0002 4,1,4D6
+
+; Diggin chuck
+46 0002 -16,1,526 -4,1,519 12,1,51A -2,-7,50A
+
+; Jumping cheep-cheep / fish
+47 0002 -2,1,42B
+
+; Jumping rock
+48 0002 0,-3,527
+
+; Growing pipe
+49 0002 0,0,552 16,0,553
+
+; Goal question sphere
+4A 0002 0,1,4B0
+
+; Pipe lakitu
+4B 0002 8,0,47D 8,-16,47C
+
+; Exploding block
+4C 0002 0,0,42C    -4,-4,417 -4,8,416 12,-4,41D 12,8,41C
+4C 0102 0,0,426    -4,-4,417 -4,8,416 12,-4,41D 12,8,41C
+4C 0202 0,0,400    -4,-4,417 -4,8,416 12,-4,41D 12,8,41C
+4C 0302 0,0,420 0,-16,410    -4,-4,417 -4,8,416 12,-4,41D 12,8,41C
+
+; Ground monty mole
+4D 0002 0,1,546 0,1,547
+
+; Ledge monty mole
+4E 0002 0,1,546 -4,-4,417 -4,8,416 12,-4,41D 12,8,41C
+
+; Jumping piranha plants
+4F 0002 8,-8,419 8,8,47F
+50 0002 8,-8,419 8,8,47F 6,-16,49E  18,-16,4AE
+
+; Ninji
+51 0002 0,1,548
+
+; Moving hole
+52 0002 -4,0,549 12,0,54A 28,0,54B
+
+; Throw block
+53 0002 0,1,4BF
+
+; climbing net door
+54 0002 8,8,580 24,8,581 40,8,582 8,24,590 24,24,591 40,24,592 8,40,5A0 24,40,5A1 40,40,5A2
+
+; Checkerboard platform, horizontal
+55 0002 0,1,554 16,1,555 32,1,555 48,1,555 64,1,555 80,1,556
+
+; Flying rock platform, horizontal
+56 0002 0,1,557 16,1,558 32,1,559 8,17,55A 24,17,55B
+
+; Checkerboard platform, vertical
+57 0002 0,1,554 16,1,555 32,1,555 48,1,555 64,1,555 80,1,556
+
+; Flying rock platform, horizontal
+58 0002 0,1,557 16,1,558 32,1,559 8,17,55A 24,17,55B
+
+; Turn block bridge, vertical
+59 0002 0,-31,54C 0,-15,54C 0,1,54C 0,17,54C 0,33,54D
+
+; Turn block bridge, horizontal
+5A 0002 -32,1,54C -16,1,54C 0,1,54C 16,1,54C 32,1,54D
+
+; Floating brown platform
+5B 0002 0,0,584 16,0,585 32,0,586
+
+; Floating checkerboard platform
+5C 0002 0,1,564 16,1,565 32,1,565 48,1,565 64,1,565 80,1,566
+
+; Floating orange platform
+5D 0002 0,0,567 16,0,568 32,0,569 8,16,56A 24,16,56B
+
+; Orange platform
+5E 0002 0,1,567 16,1,568 32,1,568 48,1,568 64,1,569 8,17,56A 24,17,54E 40,17,54E 56,17,56B
+
+; Rotating brown platform
+5F 0002 32,17,562 32,33,562 32,49,562 32,65,562 32,81,562 8,9,584 24,9,585 40,9,585 56,9,586
+
+; Flat switch palace
+60 0002 0,1,577 16,1,578
+
+; Floating skulls
+61 0002 0,4,572 16,4,572 32,4,572 48,4,572
+
+; Brown platform, line guided
+62 0002 -24,-7,584 -8,-7,585 8,-7,586
+
+; Checker/brown platform, line guided
+63 0002 -40,-7,564 -24,-7,565 -8,-7,565 8,-7,565 24,-7,566
+63 0102 -24,-7,584 -8,-7,585 8,-7,586
+
+; Rope mechanism
+; NOTE: It requires editing the original Sprite Map16 data to recreate its original sprite memory behavior
+; If anyone ever requires the actual tilemap data, it's commented out after the original data remap (short rope only).
+10000 0 08E-08F, 0
+10000 0 09D-09F, 0
+; 64 0002 -8,-7,59B -8,9,5B0 -8,21,5B0 -8,37,5B0 -8,41,5B0 -8,57,5C0
+
+; Chainsaws
+; NOTE: It requires editing the original Sprite Map16 data to recreate its original X-offset behavior
+; If anyone ever requires the actual tilemap data, it's commented out after the original data remap.
+10000 0 0AF-0AF,0
+10000 0 0BF-0BF,0
+10000 0 11C-11C,0
+10000 0 12C-12C,0
+;65 0002 8,-21,5C1 8,-35,5B1 8,-7,5AB 16,-13,573 21,-13,583
+;66 0002 8,21,5C2 8,7,5B2 8,-7,5AB 16,-13,573 21,-13,583
+
+; Line guided grinder
+; NOTE: It requires editing the original Sprite Map16 data to recreate its original X-offset behavior
+; If anyone ever requires the actual tilemap data, it's commented out after the original data remap.
+10000 0 0AB-0AE,0
+10000 0 0BB-0BE,0
+;67 0002 0,-15,5B9 16,-15,5BA 0,1,5C9 16,1,5CA
+;67 0102 0,-15,5B7 16,-15,5B8 0,1,5C7 16,1,5C8
+
+; Fuzzy, line guided
+; NOTE: It requires editing the original Sprite Map16 data to recreate its original X-offset behavior
+; If anyone ever requires the actual tilemap data, it's commented out after the original data remap.
+10000 0 0A9-0AA,0
+; 68 0002 8,-7,5A4
+; 68 0102 8,-7,5A3
+
+; Null
+69 0002 0,0,116
+
+; Coin game cloud
+6A 0002 3,0,40C 7,4,40E
+
+; Pea bouncer
+6B 0002 0,1,4BE 8,1,4BE 16,1,4BE 24,1,4BE 32,1,4BE
+6C 0002 -8,1,4BE -16,1,4BE -24,1,4BE -32,1,4BE -40,1,4BE
+
+; Invisible solid block
+6D 0002 0,0,840A
+
+; Dino rhino
+6E 0002 -8,-15,5E0 8,-15,5E1 -8,1,5F0 8,1,5F1
+
+; Dino torch
+6F 0002 -2,1,5D0
+
+; Pokey
+70 0002 1,1,55C 0,17,56C 1,33,56C 0,49,56C 1,65,56C
+
+; Super koopas
+71 0002 -3,8,55D 11,8,55E 5,11,55F
+72 0002 -3,8,56D 11,8,56E 5,11,56F
+73 0002 0,1,402 8,1,58F
+73 0102 0,1,402 8,1,57F
+
+; Mushroom
+74 0002 0,0,4D0
+
+; Fire flower
+75 0002 0,0,4D1
+
+; Star 
+76 0002 0,0,4D3
+
+; Feather
+77 0002 0,0,4D2
+
+; 1-up
+78 0002 0,0,4D4
+
+; Growing vine
+79 0002 0,1,418
+
+; Fireworks
+7A 0002 4,4,594
+
+; Goal tape
+7B 0002 -16,0,4CE 0,0,4CF
+7B 0012 -16,0,4CE 0,0,4CF
+7B 0022 -16,0,4CE 0,0,4CF
+7B 0032 -16,0,4CE 0,0,4CF
+
+; Princess peach
+7C 0002 0,0,116
+
+; P-balloon
+7D 0002 4,-1,4D7
+
+; Flying red coin
+7E 0002 -8,-9,415 14,-9,414 3,-1,4D8
+
+; Flying 1-up
+7F 0002 -8,-9,415 14,-9,414 3,-1,4D9
+
+; Key
+80 0002 0,1,406
+
+; Changing item
+81 0002 0,0,4D0
+
+; Bonus game
+; NOTE: It requires editing the original Sprite Map16 data to recreate its original behavior (fixed position on the screen)
+10000 0 209-20B,0
+10000 0 211-213,0
+
+; Flying question block
+83 0002 -14,-9,415 8,-9,414 -3,-9,84D5 -3,-1,408
+83 0102 -14,-9,415 8,-9,414 -3,-9,84D1 -3,-1,408
+83 0202 -14,-9,415 8,-9,414 -3,-9,84D2 -3,-1,408
+83 0302 -14,-9,415 8,-9,414 -3,-9,84D4 -3,-1,408
+
+84 0002 -8,-9,415 14,-9,414 3,-9,84D5 3,-1,408
+84 0102 -8,-9,415 14,-9,414 3,-9,84D1 3,-1,408
+84 0202 -8,-9,415 14,-9,414 3,-9,84D2 3,-1,408
+84 0302 -8,-9,415 14,-9,414 3,-9,84D4 3,-1,408
+
+; Null
+85 0002 0,0,116
+
+; Wiggler
+86 0002 24,-1,5A6 32,0,5A5 16,0,5A5 8,1,596 0,1,595 8,-7,59F
+
+; Lakitu cloud
+87 0002 -5,0,40C 5,1,40C 3,4,40C -3,4,40C    0,2,40C 4,8,40E
+
+; Cage sprite
+88 0002 0,1,415
+
+; Layer 3 smash
+89 0002 0,0,*Layer 3\n Smash*
+
+; Yoshi house's birds
+;8A 0002 0,0,0
+
+; Yoshi house's smoke
+;8B 0002 0,0,0
+
+; Side exit enabled
+;8C 0002 0,0,0
+
+; Ghost house exit
+;8D 0002 0,0,0
+
+; Warp hole
+8E 0002 4,4,5AA 4,20,5AA 4,36,5AA 4,52,5AA 2,4,5A8 2,20,5A8 2,36,5A8 2,52,5A8
+
+; Mushroom scale
+8F 0002 -8,0,587 8,0,588 120,0,587 136,0,588
+8F 0102 -8,0,587 8,0,588 56,0,587 72,0,588
+
+; Gas bubble
+90 0002 -3,0,49A 13,0,49B 29,0,49C 45,0,49D  -3,16,4AA 13,16,4AB 29,16,4AC 45,16,4AD  -3,32,4BA 13,32,4BB 29,32,4BC 45,32,4BD  -3,48,4CA 13,48,4CB 29,48,4CC 45,48,4CD
+
+; Chargin' chuck
+91 0002 -6,-11,509 -6,1,51D 10,1,51E 4,-7,536
+96 0002 -6,-11,509 -6,1,51D 10,1,51E 4,-7,536
+
+; Splittin' chuck
+92 0002 -4,1,528 12,1,529 0,-3,509
+
+; Bouncin' chuck
+93 0002 -4,-1,52A 12,-1,52B -5,-9,52C 13,-9,52D 1,-13,509 
+
+; Whistlin' chuck
+94 0002 -4,1,52A 12,1,52B -5,-7,52C 13,-7,52D 0,-11,50F 14,-16,514 22,-24,523
+94 0102 -4,1,52A 12,1,52B -5,-7,52C 13,-7,52D 0,-11,50C
+
+; Clappin' chuck
+95 0002 -8,-1,52E 8,-1,52F 0,-17,51F
+
+; Puntin' chuck
+97 0002 0,1,538 -8,4,537 -5,-9,509 -24,-8,539
+
+; Pitchin' chuck
+98 0002 -6,-10,509  1,-11,54F 1,-7,53D 0,1,53C   -22,1,54F
+98 0102 -8,-7,509 -8,1,53F 0,1,53E   -16,1,54F
+98 0202 -8,7,53B 0,1,53A -8,-7,509   -18,1,54F
+98 0302 -6,9,54F   -8,7,53B 0,1,53A -8,-7,509   -20,1,54F
+
+; Volcano lotus
+99 0002 -8,0,5D1 8,0,5D2 0,0,5E2 0,-9,5F2 8,-9,5F2 2,-10,5F2 6,-10,5F2
+
+; Sumo bro.
+9A 0002 -12,1,5BE 4,1,5BF 2,-7,5AF 4,16,47A
+
+; Flying' hammer bro.
+9B 0002 0,-15,5BC 16,-15,5BD 8,-23,5AE -16,-15,5BB
+
+; Flying platform
+9C 0002 0,0,5F7 16,0,5F7 -14,-10,5F8 30,-10,5F9
+
+; Bubble w/item
+9D 0002 -8,0,5DB    -15,-11,5D7 -1,-11,5D8 -15,3,5E7 -1,3,5E8 -8,-4,5CB
+9D 0102 -8,0,5EB    -15,-11,5D7 -1,-11,5D8 -15,3,5E7 -1,3,5E8 -8,-4,5CB
+9D 0202 -8,0,42B    -15,-11,5D7 -1,-11,5D8 -15,3,5E7 -1,3,5E8 -8,-4,5CB
+9D 0302 -8,0,4D0    -15,-11,5D7 -1,-11,5D8 -15,3,5E7 -1,3,5E8 -8,-4,5CB
+
+; Ball n chain
+9E 0002 -1,16,5FA -3,32,5FA -16,48,5D9 0,48,5DA -16,64,5E9 0,64,5EA
+9E 0102 1,16,5FA 3,32,5FA 0,48,5D9 16,48,5DA 0,64,5E9 16,64,5EA
+
+; Banzai bill
+9F 0002 0,0,5CC 16,0,5CD 32,0,5CE 48,0,5CF   0,16,5DC 16,16,5DD 32,16,5DE 48,16,5DF   0,32,5EC 16,32,5ED 32,32,5EE 48,32,5EF   0,48,5FC 16,48,5FD 32,48,5FE 48,48,5FF   
+
+; Activate bowser scene
+A0 0002 0,0,*  Activate  \nBowser Scene*
+
+; Bowser ball
+A1 0002 -16,-32,6C0 0,-32,6C1 16,-32,6C2 -16,-16,6D0 0,-16,6D1 16,-16,6D2 -16,0,6E0 0,0,6E1 16,0,6E2   4,0,6C3 16,-12,6D3   -8,-24,6E3
+
+; Mecha koopa
+A2 0002 0,1,611 -16,1,610 0,-15,601 -16,-15,600 15,1,60C
+
+; Rotating gray platform
+A3 0002 -1,16,563 -3,32,563 -22,48,574 -6,48,575 10,48,576
+A3 0102 1,16,563 3,32,563 6,48,563 -10,48,574 6,48,575 22,48,576
+
+; Floating spike ball
+A4 0002 -8,-8,5B3 8,-8,5B4 -8,8,5C3 8,8,5C4
+A4 0102 -8,-8,5B5 8,-8,5B6 -8,8,5C5 8,8,5C6
+
+; Sparky
+A5 0002 0,1,64A
+A5 0102 0,1,64B
+
+; Hothead
+A6 0002 -8,-8,648 8,-8,649 -8,8,658 8,8,659 0,0,65A
+A6 0102 -8,-8,648 8,-8,649 -8,8,658 8,8,659 8,0,65A
+
+; Iggy's ball
+A7 0002 0,0,6AE
+
+; Blargg
+A8 0002 0,-8,5FB
+
+; Reznor
+;A9 0002 0,0,0
+
+; Fish bone
+AA 0002 0,1,628 16,1,629
+
+; Rex
+AB 0002 0,1,5E5 -4,-15,5D5 
+
+; Wooden spike / pencil, down
+AC 0002 0,1,62B 0,-15,63A 0,-31,63A 0,-47,63A 0,-63,63A
+
+; Wooden spike / pencil, up
+AD 0002 0,1,62A 0,17,63A 0,33,63A 0,49,63A 0,65,63A
+
+; Fishin' boo
+AE 0002 -4,12,40C 6,12,40D     1,1,476 15,4,477 22,20,478 22,36,478 22,52,478 22,68,479    4,16,40D -2,16,40C
+
+; Boo block
+AF 0002 0,0,48C
+
+; Boo stream
+B0 0002 4,4,69A 12,12,69B 20,20,69D 28,28,69C 36,36,69E 44,44,69F
+
+; Creating block
+B1 0002 0,0,40A
+
+; Falling spike
+B2 0002 0,0,60B
+
+; Bowser statue fireball
+B3 0002 0,1,688
+
+; Ground grinder
+B4 0002 -8,0,5B7 8,0,5B8 -8,16,5C7 8,16,5C8
+
+; Unused
+B5 0002 0,0,474
+
+; Reflecting fireball
+B6 0002 0,0,475
+
+; Carrot lifts
+B7 0002 16,0,609 0,16,618 16,16,619
+B8 0002 0,0,60A 0,16,61A 16,16,61B
+
+; Info box
+B9 0002 0,1,40B 0,1,691
+B9 0102 0,1,40B 0,1,692
+
+; Timed lift
+BA 0002 0,1,680 16,1,681 12,5,694
+BA 0102 0,1,680 16,1,681 12,5,691
+
+; Gray block
+BB 0002 0,1,498 16,1,499 0,17,4A8 16,17,4A9
+
+; Bowser statue
+BC 0002 -16,-15,668 0,-15,669 -16,1,678 0,1,679
+BC 0102 -16,-15,668 0,-15,669 -16,1,678 0,1,679 -24,0,688
+BC 0202 -16,-16,66C 0,-16,66D -16,0,67C 0,0,67D
+BC 0302 -16,-15,668 0,-15,669 -16,1,678 0,1,679 -24,0,688
+
+; Sliding koopa
+BD 0002 0,1,404
+
+; Swooper bat
+BE 0002 0,1,62C
+
+; Mega mole
+BF 0002 0,-15,5F3 16,-15,5F4 0,1,5F5 16,1,5F6
+
+; Grey platform on lava
+C0 0002 0,3,557 16,3,558 32,3,559
+
+; Flying grey turn blocks
+C1 0002 0,2,5F7 16,2,5F7 32,2,5F7 -14,-8,5F8 46,-8,5F9
+
+; Blurp
+C2 0002 0,0,505
+
+; Porcu-puffer
+C3 0002 -8,-8,64C 8,-8,64D -8,8,65C 8,8,65D
+
+; Grey platform, falls
+C4 0002 0,1,574 16,1,575 32,1,575 48,1,576
+
+; Big boo boss
+C5 0002 -7,24,4C9  -4,0,494 12,0,495 28,0,496 44,0,497 -4,16,4A4 12,16,4A5 28,16,4A6 44,16,4A7 -4,32,4B4 12,32,4B5 28,32,4B6 44,32,4B7 -4,48,4C4 12,48,4C5 28,48,4C6 44,48,4C7   4,18,48D 4,34,608   29,24,4B9
+
+; Spotlight
+C6 0002 0,0,6D4
+
+; Invisible mushroom
+C7 0002 0,0,84D0 
+
+; Red question block
+C8 0002 0,1,63B
+
+; Bullet bill shooter
+C9 0002 0,0,41E 0,-8,4C3 
+
+; Torpedo ted launcher
+CA 0002 0,26,503 16,26,504 8,16,500
+
+; Eerie generator
+CB 0002 0,1,485 0,-8,4C3
+
+; Para-goomba generator
+CC 0002 -6,-14,47E -6,2,48E -8,-16,4C3
+
+; Para-bobomb generator
+CD 0002 -6,-14,47E -6,2,48F -8,-16,4C3
+
+; Para-goomba & para bobomb generator
+CE 0002 -6,-14,47E -6,2,48E 10,2,48F 10,-14,47E 5,-16,4C3
+
+; Dolphin generator, left
+CF 0002 0,1,542 16,1,543 32,1,544 0,-8,4C3
+
+; Dolphin generator, right
+D0 0002 -8,1,63D 8,1,63E 24,1,63F 0,-8,4C3
+
+; Fish generator
+D1 0002 0,1,42B 0,-8,4C3
+
+; Turn off generator 2
+D2 0002 0,0,* Turn Off \nGenerator2*
+
+; Super koopa generator
+D3 0002 -3,8,56D 11,8,56E 5,11,56F 0,0,4C3
+
+; Bubble generator
+D4 0002 -8,0,5DB    -15,-11,5D7 -1,-11,5D8 -15,3,5E7 -1,3,5E8 -8,-4,5CB    8,0,5EB    1,-11,5D7 17,-11,5D8 1,3,5E7 17,3,5E8 8,-4,5CB    24,0,42B    17,-11,5D7 33,-11,5D8 17,3,5E7 33,3,5E8 24,-4,5CB    0,-16,4C3
+
+; Bullet bill generator, left and righ
+D5 0002 0,1,41E 8,1,41E 0,-8,4C3
+
+; Bullet bill generator, all sides
+D6 0002 0,0,42E 0,-8,4C3
+
+; Bullet bill generator, diagonal
+D7 0002 0,0,64F 0,-8,4C3
+
+; Bowser statue fireball generator
+D8 0002 0,1,688 0,-8,4C3
+
+; Turn off generators
+D9 0002 0,0,* Turn Off \nGenerators*
+
+; Shells
+DA 0002 0,1,440
+DB 0002 0,1,441
+DC 0002 0,1,442
+DD 0002 0,1,443
+DF 0002 0,1,440
+
+; Group of 5 eeries
+DE 0002 -16,-16,484 16,-16,484 -32,16,484 0,16,484 32,16,484
+
+; Three rotating gray platforms
+E0 0002 -1,16,563 -3,32,563 -22,48,574 -6,48,575 10,48,576        -12,-10,563 -24,-20,563 -36,-30,563 -20,-30,576 -36,-30,575 -52,-30,574     15,-6,563 30,-12,563 45,-18,563 61,-18,576 45,-18,575 29,-18,574  
+E0 0102 1,16,563 3,32,563 6,48,563 -10,48,574 6,48,575 22,48,576  12,-10,563 24,-20,563 36,-30,563 20,-30,574 36,-30,575 52,-30,576     -15,-6,563 -30,-12,563 -45,-18,563 -61,-18,574 -45,-18,575 -29,-18,576
+
+; Ghost ceiling
+E1 0002 0,0,69D 0,0,4C3
+
+; Boo buddies
+E2 0002 3,81,68F 40,70,68A 68,43,68A 80,6,68D 73,-32,68F 48,-62,68A 13,-78,68A -26,-75,68D -58,-53,68F -77,-19,68A
+E3 0002 -29,75,68F 9,80,68A 45,67,68A 71,38,68D 81,0,68F 70,-37,68A 43,-66,68A 7,-79,68D -30,-72,68F -62,-49,68A
+
+; Swooper bat ceiling
+E4 0002 0,0,62E 0,0,4C3
+
+; Reappearing ghosts
+E5 0002 0,0,68E 0,0,4C3
+
+; Background candles
+E6 0002 0,0,6C6 0,0,4C3
+
+; Auto scroll special, unused?
+E7 0002 0,0,*Auto-Scroll\n Special 1 *
+E7 1002 0,0,*Auto-Scroll\nSpecial 1-A*
+E7 2002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 3002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 4002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 5002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 6002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 7002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 8002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 9002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 A002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 B002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 C002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 D002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 E002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E7 F002 0,0,*Auto-Scroll\nMAY GLITCH!*
+
+; Auto scroll special, unused?
+E8 0002 0,0,*Auto-Scroll\n Special 1 *
+E8 1002 0,0,*Auto-Scroll\nSpecial 1-A*
+E8 2002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 3002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 4002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 5002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 6002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 7002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 8002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 9002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 A002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 B002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 C002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 D002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 E002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 F002 0,0,*Auto-Scroll\nMAY GLITCH!*
+
+; Auto scroll special
+E8 0002 0,0,*Auto-Scroll\n Special 1 *
+E8 1002 0,0,*Auto-Scroll\nSpecial 1-A*
+E8 2002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 3002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 4002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 5002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 6002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 7002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 8002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 9002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 A002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 B002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 C002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 D002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 E002 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 F002 0,0,*Auto-Scroll\nMAY GLITCH!*
+
+E8 0012 0,0,*Auto-Scroll\n Special 2 *
+E8 1012 0,0,*Auto-Scroll\nSpecial 2-A*
+E8 2012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 3012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 4012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 5012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 6012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 7012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 8012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 9012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 A012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 B012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 C012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 D012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 E012 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 F012 0,0,*Auto-Scroll\nMAY GLITCH!*
+
+E8 0022 0,0,*Auto-Scroll\n Special 3 *
+E8 1022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 2022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 3022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 4022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 5022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 6022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 7022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 8022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 9022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 A022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 B022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 C022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 D022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 E022 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 F022 0,0,*Auto-Scroll\nMAY GLITCH!*
+
+E8 0032 0,0,*Auto-Scroll\n Special 4 *
+E8 1032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 2032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 3032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 4032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 5032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 6032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 7032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 8032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 9032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 A032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 B032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 C032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 D032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 E032 0,0,*Auto-Scroll\nMAY GLITCH!*
+E8 F032 0,0,*Auto-Scroll\nMAY GLITCH!*
+
+; Layer 2 smash
+E9 0002 0,0,*  Layer 2  \n  Smash-1  *
+E9 1002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 2002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 3002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 4002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 5002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 6002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 7002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 8002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 9002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 A002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 B002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 C002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 D002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 E002 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 F002 0,0,*  Layer 2  \nMAY GLITCH!*
+
+E9 0012 0,0,*  Layer 2  \n  Smash-2  *
+E9 1012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 2012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 3012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 4012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 5012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 6012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 7012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 8012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 9012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 A012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 B012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 C012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 D012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 E012 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 F012 0,0,*  Layer 2  \nMAY GLITCH!*
+
+E9 0022 0,0,*  Layer 2  \n  Smash-3  *
+E9 1022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 2022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 3022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 4022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 5022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 6022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 7022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 8022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 9022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 A022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 B022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 C022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 D022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 E022 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 F022 0,0,*  Layer 2  \nMAY GLITCH!*
+
+E9 0032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 1032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 2032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 3032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 4032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 5032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 6032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 7032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 8032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 9032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 A032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 B032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 C032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 D032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 E032 0,0,*  Layer 2  \nMAY GLITCH!*
+E9 F032 0,0,*  Layer 2  \nMAY GLITCH!*
+
+; Layer 2 Scroll
+EA 0002 0,0,*Layer 2 Scroll\n   Range 12   *
+EA 1002 0,0,*Layer 2 Scroll\n   Range 05   *
+EA 2002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 3002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 4002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 5002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 6002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 7002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 8002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 9002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA A002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA B002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA C002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA D002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA E002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA F002 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+
+EA 0012 0,0,*Layer 2 Scroll\n   Range 08   *
+EA 1012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 2012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 3012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 4012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 5012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 6012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 7012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 8012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 9012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA A012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA B012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA C012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA D012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA E012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA F012 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+
+EA 0022 0,0,*Layer 2 Scroll\n   Range 05   *
+EA 1022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 2022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 3022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 4022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 5022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 6022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 7022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 8022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 9022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA A022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA B022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA C022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA D022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA E022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA F022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+
+EA 0032 0,0,*Layer 2 Scroll\n   Range 06   *
+EA 1032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 2032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 3032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 4032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 5032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 6032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 7032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 8032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA 9032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA A032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA B032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA C032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA D032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA E032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EA F032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+
+; Null
+EB 0002 0,0,116
+
+; Null
+EC 0002 0,0,116
+
+; Layer 2 - Falls
+ED 0002 0,0,*Layer 2\n Falls *
+
+; Null
+EE 0002 0,0,116
+
+; Layer 2 scroll - sideways short
+EF 0002 0,0,*Layer 2 Scroll\nSideways Short*
+EF 0102 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0202 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0302 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0402 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0502 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0602 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0702 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0802 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0902 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0A02 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0B02 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0C02 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0D02 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0E02 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0F02 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+
+EF 0012 0,0,*Layer 2 Scroll\nSideways  Long*
+EF 0112 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0212 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0312 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0412 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0512 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0612 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0712 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0812 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0912 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0A12 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0B12 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0C12 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0D12 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0E12 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+EF 0F12 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+
+EF 0022 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+
+EF 0032 0,0,*Layer 2 Scroll\n MAY GLITCH!! *
+
+; Null
+F0 0002 0,0,116
+
+; Null
+F1 0002 0,0,116
+
+; Layer 2 On/Off switch
+F2 0002 0,0,*   Layer 2   \nOn/Off Switch*
+
+; Autoscroll
+F3 0002 0,0,*   Slow    \nAuto-Scroll*
+F3 1002 0,0,*  Medium 2 \nAuto-Scroll*
+F3 2002 0,0,*   Fast    \nAuto-Scroll*
+F3 3002 0,0,*   Fast    \nAuto-Scroll*
+F3 4002 0,0,*   Slow    \nAuto-Scroll*
+F3 5002 0,0,*   Fast    \nAuto-Scroll*
+F3 6002 0,0,*   Fast    \nAuto-Scroll*
+F3 7002 0,0,*   Fast    \nAuto-Scroll*
+F3 8002 0,0,*   Fast    \nAuto-Scroll*
+F3 9002 0,0,*   Fast    \nAuto-Scroll*
+F3 A002 0,0,*   Fast    \nAuto-Scroll*
+F3 B002 0,0,*   Fast    \nAuto-Scroll*
+F3 C002 0,0,*   Fast    \nAuto-Scroll*
+F3 D002 0,0,*   Fast    \nAuto-Scroll*
+F3 E002 0,0,*   Fast    \nAuto-Scroll*
+F3 F002 0,0,*   Fast    \nAuto-Scroll*
+
+F3 0012 0,0,*  Medium   \nAuto-Scroll*
+F3 1012 0,0,*   Fast    \nAuto-Scroll*
+F3 2012 0,0,*   Fast    \nAuto-Scroll*
+F3 3012 0,0,*  Medium   \nAuto-Scroll*
+F3 4012 0,0,*   Fast    \nAuto-Scroll*
+F3 5012 0,0,*  Medium 2 \nAuto-Scroll*
+F3 6012 0,0,*   Fast    \nAuto-Scroll*
+F3 7012 0,0,*   Fast    \nAuto-Scroll*
+F3 8012 0,0,*   Fast    \nAuto-Scroll*
+F3 9012 0,0,*   Fast    \nAuto-Scroll*
+F3 A012 0,0,*   Fast    \nAuto-Scroll*
+F3 B012 0,0,*   Fast    \nAuto-Scroll*
+F3 C012 0,0,*   Fast    \nAuto-Scroll*
+F3 D012 0,0,*   Fast    \nAuto-Scroll*
+F3 E012 0,0,*   Fast    \nAuto-Scroll*
+F3 F012 0,0,*   Fast    \nAuto-Scroll*
+
+F3 0022 0,0,*   Slow    \nAuto-Scroll*
+F3 1022 0,0,*  Medium 2 \nAuto-Scroll*
+F3 2022 0,0,*   Fast    \nAuto-Scroll*
+F3 3022 0,0,*   Fast    \nAuto-Scroll*
+F3 4022 0,0,*   Slow    \nAuto-Scroll*
+F3 5022 0,0,*   Fast    \nAuto-Scroll*
+F3 6022 0,0,*   Fast    \nAuto-Scroll*
+F3 7022 0,0,*   Fast    \nAuto-Scroll*
+F3 8022 0,0,*   Fast    \nAuto-Scroll*
+F3 9022 0,0,*   Fast    \nAuto-Scroll*
+F3 A022 0,0,*   Fast    \nAuto-Scroll*
+F3 B022 0,0,*   Fast    \nAuto-Scroll*
+F3 C022 0,0,*   Fast    \nAuto-Scroll*
+F3 D022 0,0,*   Fast    \nAuto-Scroll*
+F3 E022 0,0,*   Fast    \nAuto-Scroll*
+F3 F022 0,0,*   Fast    \nAuto-Scroll*
+
+F3 0032 0,0,*   Slow    \nAuto-Scroll*
+F3 1032 0,0,*  Medium 2 \nAuto-Scroll*
+F3 2032 0,0,*   Fast    \nAuto-Scroll*
+F3 3032 0,0,*   Fast    \nAuto-Scroll*
+F3 4032 0,0,*   Slow    \nAuto-Scroll*
+F3 5032 0,0,*   Fast    \nAuto-Scroll*
+F3 6032 0,0,*   Fast    \nAuto-Scroll*
+F3 7032 0,0,*   Fast    \nAuto-Scroll*
+F3 8032 0,0,*   Fast    \nAuto-Scroll*
+F3 9032 0,0,*   Fast    \nAuto-Scroll*
+F3 A032 0,0,*   Fast    \nAuto-Scroll*
+F3 B032 0,0,*   Fast    \nAuto-Scroll*
+F3 C032 0,0,*   Fast    \nAuto-Scroll*
+F3 D032 0,0,*   Fast    \nAuto-Scroll*
+F3 E032 0,0,*   Fast    \nAuto-Scroll*
+F3 F032 0,0,*   Fast    \nAuto-Scroll*
+
+; Fast BG Scroll
+F4 0002 0,0,*Fast BG Scroll*
+
+; Layer 2 sking
+F5 0002 0,0,*  Layer 2  \nSink  Short*
+F5 1002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 2002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 3002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 4002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 5002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 6002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 7002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 8002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 9002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 A002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 B002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 C002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 D002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 E002 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 F002 0,0,*  Layer 2  \nMAY GLITCH!*
+
+F5 0012 0,0,*  Layer 2  \n Sink Long *
+F5 1012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 2012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 3012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 4012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 5012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 6012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 7012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 8012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 9012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 A012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 B012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 C012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 D012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 E012 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 F012 0,0,*  Layer 2  \nMAY GLITCH!*
+
+F5 0022 0,0,*  Layer 2  \n  Rise Up  *
+F5 1022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 2022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 3022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 4022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 5022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 6022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 7022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 8022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 9022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 A022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 B022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 C022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 D022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 E022 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 F022 0,0,*  Layer 2  \nMAY GLITCH!*
+
+F5 0032 0,0,*  Layer 2  \n Give Some *
+F5 1032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 2032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 3032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 4032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 5032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 6032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 7032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 8032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 9032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 A032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 B032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 C032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 D032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 E032 0,0,*  Layer 2  \nMAY GLITCH!*
+F5 F032 0,0,*  Layer 2  \nMAY GLITCH!*
+

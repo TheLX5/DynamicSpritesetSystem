@@ -54,6 +54,8 @@ pushpc
                 db "DSS"
             ;# Version number
                 dw 0006
+            ;# Shared routine
+                dl find_and_queue_gfx
         warnpc $01DF91
     org $01DF91
         bonus_items_write_end:

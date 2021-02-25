@@ -151,5 +151,9 @@ pushpc
     org $02CD45
         flat_switch_palace_tilemap:
             db $60,$61,$61,$60,$70,$71,$71,$70
+
+    org $00AA76
+        disable_special_world_clear_skins:
+            db $80
 pullpc
 

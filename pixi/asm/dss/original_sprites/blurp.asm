@@ -3,7 +3,7 @@ pushpc
         blurp_write:
             lda #!dss_id_blurp
             jsl find_and_queue_gfx
-            bcs .loaded
+            bcc blurp_write_end
         .loaded
             jsr GetDrawInfoBnk3
             lda $00
@@ -36,9 +36,15 @@ pullpc
         lda.l !dss_tile_buffer+$01
     .other
         sta $0302|!addr,y
+        lda !157C,x
+        lsr 
         lda !15F6,x
+        bcs .flip 
+        ora #$40
+    .flip 
         ora $64
         sta $0303|!addr,y
+        ldx $15E9|!addr
         lda #$00
         ldy #$02
         jml FinishOAMWrite

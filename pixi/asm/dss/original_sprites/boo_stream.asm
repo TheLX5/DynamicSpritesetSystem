@@ -25,8 +25,16 @@ pullpc
 
     boo_stream_write:
         tax 
+        lda.b #!dss_id_boo
+        jsl find_and_queue_gfx
+        bcs .loaded
+        lda #$F0 
+        sta $0301|!addr,y
+        bra .return
+    .loaded
         lda !dss_tile_buffer,x
         sta $0302|!addr,y
+    .return
         plx
         jml boo_stream_write_end
 

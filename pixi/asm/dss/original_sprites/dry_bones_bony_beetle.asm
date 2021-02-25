@@ -127,8 +127,8 @@ pullpc
         rtl
 
     dry_bones_init:
-        lda !1602,x
-        cmp #$02
+        lda !9E,x
+        cmp #$30
         bne .two_tiles
         lda.b #!dss_id_bone_projectile
         jsl find_and_queue_gfx

@@ -29,8 +29,8 @@ pushpc
             bcs .loaded 
             rts
         .loaded
-            phx
             jsr GetDrawInfoBnk1
+            phx
             jsl ground_grinder_write
             bra grinder_write_end
         warnpc $01DBD0

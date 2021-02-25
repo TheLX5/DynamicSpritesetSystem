@@ -149,3 +149,4 @@
         incsrc "../dss/original_sprites/blargg.asm"
         incsrc "../dss/original_sprites/spotlight.asm"
         incsrc "../dss/original_sprites/item_box.asm"
+        incsrc "../dss/original_sprites/bowling_ball.asm"

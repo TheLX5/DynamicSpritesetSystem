@@ -159,10 +159,16 @@ garbage_collector:
     ldy #$00
     tyx
 ..loop
-    lda ($0D),y                         ; get tile num
-    tax 
-    lda.l tile_lookup,x                 ; get tile offset for map
-    tax
+    lda ($0D),y
+    cmp #$FF
+    beq ..next
+    ldx #$00
+...loop_vram
+    cmp.w !dss_vram_dest,x
+    beq ..found_offset
+    inx 
+    bra ...loop_vram
+..found_offset
     lda.w !dss_map,x                    ; failsafe: check if gfx num is the same as the one in the map
     cmp $0F
     bne ..next
@@ -187,18 +193,3 @@ garbage_collector:
 
     jmp .skip_list_slot
 
-
-tile_lookup:
-    !i = 0
-    !j = 0
-    while !i < 64
-        while !j < 8
-            dw !i
-            !i #= !i+1
-            !j #= !j+1
-        endif
-        if !j == 8
-            !j #= 0
-            dw 0,0,0,0,0,0,0,0
-        endif
-    endif

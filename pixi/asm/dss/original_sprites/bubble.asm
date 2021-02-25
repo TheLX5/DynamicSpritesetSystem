@@ -45,7 +45,7 @@ pushpc
 
     org $02D8A9
         bubble_item_props:
-            db $85,$85,$05,$08
+            db $85,$85,$05,$09
 pullpc
 
     bubble_item:

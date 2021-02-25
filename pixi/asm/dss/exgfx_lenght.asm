@@ -98,7 +98,7 @@ exgfx_lenght:
     db $05              ;# 5E - Dino torch
     db $08              ;# 5F - Dino fire
     db $09              ;# 60 - Mecha-koopa
-    db $05              ;# 61 - Bowling ball
+    db $06              ;# 61 - Bowling ball
     db $03              ;# 62 - Brown platform
     db $01              ;# 63 - Brown platform chain
     db $01              ;# 64 - Smiling coin

@@ -149,13 +149,3 @@
         incsrc "../dss/original_sprites/blargg.asm"
         incsrc "../dss/original_sprites/spotlight.asm"
         incsrc "../dss/original_sprites/item_box.asm"
-
-;################################################
-;# Print info
-
-    print "Dynamic Spritesets auxiliary patch"
-    print "Version 1.0.0"
-    print "by lx5"
-    print ""
-    print "Bytes modified: ", bytes," bytes."
-    print "Freespace used: ", freespaceuse," bytes."

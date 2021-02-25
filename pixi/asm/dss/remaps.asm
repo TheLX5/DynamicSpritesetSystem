@@ -24,10 +24,16 @@ pushpc
         lava_splash_tilemap:
             db !lava_particle_tiny_tile,!lava_particle_small_tile
             db !lava_particle_medium_tile,!lava_particle_large_tile
+    org $029ED5
+        lava_splash_props:
+            db $04
     org $028F2B
         podoboo_lava_trail_tilemap:
             db !lava_particle_tiny_tile,!lava_particle_small_tile
             db !lava_particle_medium_tile,!lava_particle_large_tile
+    org $028F76
+        podoboo_lava_trail_props:
+            db $04
     org $029C94
         spin_jump_star_tilemap:
             db !spinjump_star_tile
@@ -104,6 +110,8 @@ pushpc
     org $028114
         bob_omb_explosion_tilemap:
             db !explosion_tile
+    org $02811E
+        clc 
 
     org $01C653
         coin_large_tilemap:
@@ -139,5 +147,9 @@ pushpc
     org $01F494
         yoshi_tongue_props:
             db $08
+
+    org $02CD45
+        flat_switch_palace_tilemap:
+            db $60,$61,$61,$60,$70,$71,$71,$70
 pullpc
 

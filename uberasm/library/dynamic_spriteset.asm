@@ -146,7 +146,7 @@ macro dss_write_tile()
     lda #$0000                      ; mark slot as unused
     sta !dss_gfx_queue_vram,x
 
-    txa
+    lda !dss_gfx_queue_index_nmi
     clc 
     adc #$0004                      ; update index
     sta !dss_gfx_queue_index_nmi

@@ -20,7 +20,25 @@ pushpc
         smushed_sprites_end:
     org $01E75A
         smushed_sprites_return:
+
+    org $018904
+        fix_shelless_koopa_delay_hijack:
+            jml fix_shelless_koopa_delay
+    org $018908
+        fix_shelless_koopa_delay_end:
+    org $018952
+        fix_shelless_koopa_delay_return:
 pullpc
+
+    fix_shelless_koopa_delay:
+        lda.b #!dss_id_misc_tiles_1
+        jsl find_and_queue_gfx
+        lda $9D
+        beq ._return
+        jml fix_shelless_koopa_delay_end
+    ._return 
+        jml fix_shelless_koopa_delay_return
+        
 
     smushed_p_switch:
         lda.l !dss_tile_buffer+$01

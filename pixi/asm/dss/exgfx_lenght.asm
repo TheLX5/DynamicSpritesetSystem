@@ -89,7 +89,7 @@ exgfx_lenght:
     db $02              ;# 55 - Spiky balls
     db $01              ;# 56 - Goal question sphere
     db $01              ;# 57 - Springboard
-    db $08              ;# 58 - Disco ball
+    db $09              ;# 58 - Disco ball
     db $03              ;# 59 - Hammer bro
     db $02              ;# 5A - Hammer projectile
     db $03              ;# 5B - Carrot platform

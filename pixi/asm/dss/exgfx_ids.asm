@@ -173,7 +173,7 @@ exgfx_ids:
 ;.4B Pipe dwelling Lakitu
     db !dss_id_lakitu
 ;.4C Exploding Block
-    db !dss_id_null
+    db !dss_id_turn_block
 ;.4D Ground dwelling Monty Mole
     db !dss_id_monty_mole
 ;.4E Ledge dwelling Monty Mole
@@ -187,7 +187,7 @@ exgfx_ids:
 ;.52 Moving ledge hole in ghost house
     db !dss_id_moving_hole
 ;.53 Throw block sprite
-    db !dss_id_null
+    db !dss_id_turn_block
 ;.54 Climbing net door
     db !dss_id_climbing_net
 ;.55 Checkerboard platform, horizontal
@@ -199,9 +199,9 @@ exgfx_ids:
 ;.58 Flying rock platform, vertical
     db !dss_id_rock_platform
 ;.59 Turn block bridge, horizontal and vertical
-    db !dss_id_null
+    db !dss_id_turn_block
 ;.5A Turn block bridge, horizontal
-    db !dss_id_null
+    db !dss_id_turn_block
 ;.5B Brown platform floating in water
     db !dss_id_brown_platform
 ;.5C Checkerboard platform that falls
@@ -283,9 +283,9 @@ exgfx_ids:
 ;.82 Bonus game sprite
     db !dss_id_bonus_box
 ;.83 Left flying question block
-    db !dss_id_null
+    db !dss_id_question_block
 ;.84 Flying question block
-    db !dss_id_null
+    db !dss_id_question_block
 ;.85 Unused (Pretty sure)
     db !dss_id_null
 ;.86 Wiggler
@@ -333,7 +333,7 @@ exgfx_ids:
 ;.9B Hammer Brother
     db !dss_id_hammer_bro
 ;.9C Flying blocks for Hammer Brother
-    db !dss_id_null
+    db !dss_id_turn_block
 ;.9D Bubble with sprite
     db !dss_id_bubble
 ;.9E Ball and Chain
@@ -375,7 +375,7 @@ exgfx_ids:
 ;.B0 Reflecting stream of Boo Buddies
     db !dss_id_boo
 ;.B1 Creating/Eating block
-    db !dss_id_null
+    db !dss_id_used_block
 ;.B2 Falling Spike
     db !dss_id_falling_spike
 ;.B3 Bowser statue fireball
@@ -407,7 +407,7 @@ exgfx_ids:
 ;.C0 Grey platform on lava
     db !dss_id_rock_platform
 ;.C1 Flying grey turnblocks
-    db !dss_id_null
+    db !dss_id_turn_block
 ;.C2 Blurp fish
     db !dss_id_blurp
 ;.C3 Porcu-Puffer fish
@@ -421,7 +421,7 @@ exgfx_ids:
 ;.C7 Invisible mushroom
     db !dss_id_null
 ;.C8 Light switch block for dark room
-    db !dss_id_null
+    db !dss_id_question_block
 ;.C9 Bullet Bill shooter
     db !dss_id_bullet_bill
 ;.CA Torpedo Launcher
@@ -1090,7 +1090,7 @@ exgfx_ids:
 ;.10 Spinjump stars
     db !dss_id_null
 ;.11 Yoshi fireballs
-    db !dss_id_null
+    db !dss_id_yoshi_fireball
 ;.12 Water bubble
     db !dss_id_null
 ;.13
@@ -1591,6 +1591,525 @@ exgfx_ids:
     db !dss_id_boo
 ;.08 Swooper bat
     db !dss_id_swooper_bat
+;.09
+    db !dss_id_null
+;.0A
+    db !dss_id_null
+;.0B
+    db !dss_id_null
+;.0C
+    db !dss_id_null
+;.0D
+    db !dss_id_null
+;.0E
+    db !dss_id_null
+;.0F
+    db !dss_id_null
+;.10
+    db !dss_id_null
+;.11
+    db !dss_id_null
+;.12
+    db !dss_id_null
+;.13
+    db !dss_id_null
+;.14
+    db !dss_id_null
+;.15
+    db !dss_id_null
+;.16
+    db !dss_id_null
+;.17
+    db !dss_id_null
+;.18
+    db !dss_id_null
+;.19
+    db !dss_id_null
+;.1A
+    db !dss_id_null
+;.1B
+    db !dss_id_null
+;.1C
+    db !dss_id_null
+;.1D
+    db !dss_id_null
+;.1E
+    db !dss_id_null
+;.1F
+    db !dss_id_null
+;.20
+    db !dss_id_null
+;.21
+    db !dss_id_null
+;.22
+    db !dss_id_null
+;.23
+    db !dss_id_null
+;.24
+    db !dss_id_null
+;.25
+    db !dss_id_null
+;.26
+    db !dss_id_null
+;.27
+    db !dss_id_null
+;.28
+    db !dss_id_null
+;.29
+    db !dss_id_null
+;.2A
+    db !dss_id_null
+;.2B
+    db !dss_id_null
+;.2C
+    db !dss_id_null
+;.2D
+    db !dss_id_null
+;.2E
+    db !dss_id_null
+;.2F
+    db !dss_id_null
+;.30
+    db !dss_id_null
+;.31
+    db !dss_id_null
+;.32
+    db !dss_id_null
+;.33
+    db !dss_id_null
+;.34
+    db !dss_id_null
+;.35
+    db !dss_id_null
+;.36
+    db !dss_id_null
+;.37
+    db !dss_id_null
+;.38
+    db !dss_id_null
+;.39
+    db !dss_id_null
+;.3A
+    db !dss_id_null
+;.3B
+    db !dss_id_null
+;.3C
+    db !dss_id_null
+;.3D
+    db !dss_id_null
+;.3E
+    db !dss_id_null
+;.3F
+    db !dss_id_null
+;.40
+    db !dss_id_null
+;.41
+    db !dss_id_null
+;.42
+    db !dss_id_null
+;.43
+    db !dss_id_null
+;.44
+    db !dss_id_null
+;.45
+    db !dss_id_null
+;.46
+    db !dss_id_null
+;.47
+    db !dss_id_null
+;.48
+    db !dss_id_null
+;.49
+    db !dss_id_null
+;.4A
+    db !dss_id_null
+;.4B
+    db !dss_id_null
+;.4C
+    db !dss_id_null
+;.4D
+    db !dss_id_null
+;.4E
+    db !dss_id_null
+;.4F
+    db !dss_id_null
+;.50
+    db !dss_id_null
+;.51
+    db !dss_id_null
+;.52
+    db !dss_id_null
+;.53
+    db !dss_id_null
+;.54
+    db !dss_id_null
+;.55
+    db !dss_id_null
+;.56
+    db !dss_id_null
+;.57
+    db !dss_id_null
+;.58
+    db !dss_id_null
+;.59
+    db !dss_id_null
+;.5A
+    db !dss_id_null
+;.5B
+    db !dss_id_null
+;.5C
+    db !dss_id_null
+;.5D
+    db !dss_id_null
+;.5E
+    db !dss_id_null
+;.5F
+    db !dss_id_null
+;.60
+    db !dss_id_null
+;.61
+    db !dss_id_null
+;.62
+    db !dss_id_null
+;.63
+    db !dss_id_null
+;.64
+    db !dss_id_null
+;.65
+    db !dss_id_null
+;.66
+    db !dss_id_null
+;.67
+    db !dss_id_null
+;.68
+    db !dss_id_null
+;.69
+    db !dss_id_null
+;.6A
+    db !dss_id_null
+;.6B
+    db !dss_id_null
+;.6C
+    db !dss_id_null
+;.6D
+    db !dss_id_null
+;.6E
+    db !dss_id_null
+;.6F
+    db !dss_id_null
+;.70
+    db !dss_id_null
+;.71
+    db !dss_id_null
+;.72
+    db !dss_id_null
+;.73
+    db !dss_id_null
+;.74
+    db !dss_id_null
+;.75
+    db !dss_id_null
+;.76
+    db !dss_id_null
+;.77
+    db !dss_id_null
+;.78
+    db !dss_id_null
+;.79
+    db !dss_id_null
+;.7A
+    db !dss_id_null
+;.7B
+    db !dss_id_null
+;.7C
+    db !dss_id_null
+;.7D
+    db !dss_id_null
+;.7E
+    db !dss_id_null
+;.7F
+    db !dss_id_null
+;.80
+    db !dss_id_null
+;.81
+    db !dss_id_null
+;.82
+    db !dss_id_null
+;.83
+    db !dss_id_null
+;.84
+    db !dss_id_null
+;.85
+    db !dss_id_null
+;.86
+    db !dss_id_null
+;.87
+    db !dss_id_null
+;.88
+    db !dss_id_null
+;.89
+    db !dss_id_null
+;.8A
+    db !dss_id_null
+;.8B
+    db !dss_id_null
+;.8C
+    db !dss_id_null
+;.8D
+    db !dss_id_null
+;.8E
+    db !dss_id_null
+;.8F
+    db !dss_id_null
+;.90
+    db !dss_id_null
+;.91
+    db !dss_id_null
+;.92
+    db !dss_id_null
+;.93
+    db !dss_id_null
+;.94
+    db !dss_id_null
+;.95
+    db !dss_id_null
+;.96
+    db !dss_id_null
+;.97
+    db !dss_id_null
+;.98
+    db !dss_id_null
+;.99
+    db !dss_id_null
+;.9A
+    db !dss_id_null
+;.9B
+    db !dss_id_null
+;.9C
+    db !dss_id_null
+;.9D
+    db !dss_id_null
+;.9E
+    db !dss_id_null
+;.9F
+    db !dss_id_null
+;.A0
+    db !dss_id_null
+;.A1
+    db !dss_id_null
+;.A2
+    db !dss_id_null
+;.A3
+    db !dss_id_null
+;.A4
+    db !dss_id_null
+;.A5
+    db !dss_id_null
+;.A6
+    db !dss_id_null
+;.A7
+    db !dss_id_null
+;.A8
+    db !dss_id_null
+;.A9
+    db !dss_id_null
+;.AA
+    db !dss_id_null
+;.AB
+    db !dss_id_null
+;.AC
+    db !dss_id_null
+;.AD
+    db !dss_id_null
+;.AE
+    db !dss_id_null
+;.AF
+    db !dss_id_null
+;.B0
+    db !dss_id_null
+;.B1
+    db !dss_id_null
+;.B2
+    db !dss_id_null
+;.B3
+    db !dss_id_null
+;.B4
+    db !dss_id_null
+;.B5
+    db !dss_id_null
+;.B6
+    db !dss_id_null
+;.B7
+    db !dss_id_null
+;.B8
+    db !dss_id_null
+;.B9
+    db !dss_id_null
+;.BA
+    db !dss_id_null
+;.BB
+    db !dss_id_null
+;.BC
+    db !dss_id_null
+;.BD
+    db !dss_id_null
+;.BE
+    db !dss_id_null
+;.BF
+    db !dss_id_null
+;.C0
+    db !dss_id_null
+;.C1
+    db !dss_id_null
+;.C2
+    db !dss_id_null
+;.C3
+    db !dss_id_null
+;.C4
+    db !dss_id_null
+;.C5
+    db !dss_id_null
+;.C6
+    db !dss_id_null
+;.C7
+    db !dss_id_null
+;.C8
+    db !dss_id_null
+;.C9
+    db !dss_id_null
+;.CA
+    db !dss_id_null
+;.CB
+    db !dss_id_null
+;.CC
+    db !dss_id_null
+;.CD
+    db !dss_id_null
+;.CE
+    db !dss_id_null
+;.CF
+    db !dss_id_null
+;.D0
+    db !dss_id_null
+;.D1
+    db !dss_id_null
+;.D2
+    db !dss_id_null
+;.D3
+    db !dss_id_null
+;.D4
+    db !dss_id_null
+;.D5
+    db !dss_id_null
+;.D6
+    db !dss_id_null
+;.D7
+    db !dss_id_null
+;.D8
+    db !dss_id_null
+;.D9
+    db !dss_id_null
+;.DA
+    db !dss_id_null
+;.DB
+    db !dss_id_null
+;.DC
+    db !dss_id_null
+;.DD
+    db !dss_id_null
+;.DE
+    db !dss_id_null
+;.DF
+    db !dss_id_null
+;.E0
+    db !dss_id_null
+;.E1
+    db !dss_id_null
+;.E2
+    db !dss_id_null
+;.E3
+    db !dss_id_null
+;.E4
+    db !dss_id_null
+;.E5
+    db !dss_id_null
+;.E6
+    db !dss_id_null
+;.E7
+    db !dss_id_null
+;.E8
+    db !dss_id_null
+;.E9
+    db !dss_id_null
+;.EA
+    db !dss_id_null
+;.EB
+    db !dss_id_null
+;.EC
+    db !dss_id_null
+;.ED
+    db !dss_id_null
+;.EE
+    db !dss_id_null
+;.EF
+    db !dss_id_null
+;.F0
+    db !dss_id_null
+;.F1
+    db !dss_id_null
+;.F2
+    db !dss_id_null
+;.F3
+    db !dss_id_null
+;.F4
+    db !dss_id_null
+;.F5
+    db !dss_id_null
+;.F6
+    db !dss_id_null
+;.F7
+    db !dss_id_null
+;.F8
+    db !dss_id_null
+;.F9
+    db !dss_id_null
+;.FA
+    db !dss_id_null
+;.FB
+    db !dss_id_null
+;.FC
+    db !dss_id_null
+;.FD
+    db !dss_id_null
+;.FE
+    db !dss_id_null
+;.FF
+    db !dss_id_null
+
+
+
+;##################################################################################################
+;# Bounce sprites
+
+.bounce_sprites
+;.00 Null
+    db !dss_id_null
+;.01 Turn block
+    db !dss_id_turn_block
+;.02 Note block
+    db !dss_id_note_block
+;.03 Question block
+    db !dss_id_question_block
+;.04 Sideways bouncing block
+    db !dss_id_turn_block
+;.05 Glass block
+    db !dss_id_glass_block
+;.06 ON/OFF block
+    db !dss_id_on_off_bounce_block
+;.07 Turn block (turning)
+    db !dss_id_turn_block
+;.08 
+    db !dss_id_null 
 ;.09
     db !dss_id_null
 ;.0A

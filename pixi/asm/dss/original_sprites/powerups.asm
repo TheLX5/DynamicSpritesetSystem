@@ -80,7 +80,7 @@ pullpc
     .loaded
         lda.l !dss_tile_buffer
         jml powerups_write_end
-
+        
     bonus_items_init:
         lda.b #!dss_id_bonus_box
         jsl find_and_queue_gfx

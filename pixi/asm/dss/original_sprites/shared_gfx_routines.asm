@@ -125,7 +125,7 @@ pushpc
 
             .throw_block
                 ;db $40                                  ;$019C02 - Throwblock / exploding turnblock
-                db $40
+                db $00
 
             .net_koopa
                 ;db $07,$27,$4C,$29,$4E,$2B,$82,$A0      ;$019C03 - Climbing Koopa
@@ -591,7 +591,7 @@ pullpc
 
         .throw_block
             ;db $40                                  ;$019C02 - Throwblock / exploding turnblock
-            db !dss_id_null
+            db !dss_id_turn_block
 
         .net_koopa
             ;db $07,$27,$4C,$29,$4E,$2B,$82,$A0      ;$019C03 - Climbing Koopa

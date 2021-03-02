@@ -172,6 +172,10 @@
 ;# 20 bytes
     !dss_cluster_sprite_copy = !dss_extended_sprite_copy+10
 
+;# Copy of the bounce sprite table ($1699)
+;# 4 bytes
+    !dss_bounce_sprite_copy = !dss_cluster_sprite_copy+4
+
 ;####################################################################
 ;# Spriteset defines
 
@@ -292,12 +296,12 @@
     !dss_id_goal_tape               ?= $72
     !dss_id_p_switch                ?= $73
     !dss_id_info_fox                ?= $74
-    !dss_id_            ?= $75
-    !dss_id_            ?= $76
-    !dss_id_            ?= $77
-    !dss_id_            ?= $78
-    !dss_id_            ?= $79
-    !dss_id_            ?= $7A
+    !dss_id_question_block          ?= $75
+    !dss_id_turn_block              ?= $76
+    !dss_id_used_block              ?= $77
+    !dss_id_on_off_bounce_block     ?= $78
+    !dss_id_note_block              ?= $79
+    !dss_id_glass_block             ?= $7A
     !dss_id_            ?= $7B
     !dss_id_            ?= $7C
     !dss_id_            ?= $7D
@@ -427,7 +431,7 @@
     !dss_id_            ?= $F9
     !dss_id_            ?= $FA
     !dss_id_            ?= $FB
-    !dss_id_            ?= $FC
+    !dss_id_yoshi_fireball          ?= $FC
     !dss_id_            ?= $FD
     !dss_id_bonus_box               ?= $FE
     !dss_id_null                    ?= $FF

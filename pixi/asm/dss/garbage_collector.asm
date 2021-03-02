@@ -36,6 +36,24 @@ fill_sprites:
     phb
     phk
     plb
+
+
+.bounce
+    ldx.b #4-1
+..loop
+    lda $1699|!addr,x
+    beq ..next
+    cmp.l !dss_bounce_sprite_copy,x
+    sta.l !dss_bounce_sprite_copy,x
+    beq ..next
+    tay
+    lda.w exgfx_ids_bounce_sprites,y
+    jsl find_and_queue_gfx
+..next
+    dex
+    bpl ..loop
+
+
 .regular
     ldx.b #22-1
 ..loop
@@ -79,6 +97,7 @@ fill_sprites:
 ..next
     dex 
     bpl ..loop
+
 
 .cluster
     lda $18B8|!addr

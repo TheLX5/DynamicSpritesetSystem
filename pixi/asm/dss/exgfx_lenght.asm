@@ -118,12 +118,12 @@ exgfx_lenght:
     db $01              ;# 72 - Goal tape
     db $02              ;# 73 - P-Switch
     db $01              ;# 74 - Info box
-    db $0              ;# 75 - Unused
-    db $0              ;# 76 - Unused
-    db $0              ;# 77 - Unused
-    db $0              ;# 78 - Unused
-    db $0              ;# 79 - Unused
-    db $0              ;# 7A - Unused
+    db $01              ;# 75 - Question block
+    db $01              ;# 76 - Turn block
+    db $01              ;# 77 - Used block
+    db $01              ;# 78 - ON/OFF bounce block
+    db $01              ;# 79 - Note block
+    db $01              ;# 7A - Glass block
     db $0              ;# 7B - Unused
     db $0              ;# 7C - Unused
     db $0              ;# 7D - Unused
@@ -253,7 +253,7 @@ exgfx_lenght:
     db $0              ;# F9 - Unused
     db $0              ;# FA - Unused
     db $0              ;# FB - Unused
-    db $0              ;# FC - Unused
+    db $02              ;# FC - Yoshi fireballs
     db $0              ;# FD - Unused
     db $01              ;# FE - Bonus box
     db $FF              ;# FF - NULL, DONT USE

@@ -256,6 +256,31 @@ find_and_queue_gfx:
     ldx $02
     stz.w !dss_list_gfx_loaded,x
 
+.predictor
+    rep #$20
+    txa
+    asl
+    tay
+    lda.w !dss_list_queue_index,y
+    sec 
+    sbc.w #!dss_queue_tiles*4
+    sec
+    sbc.w !dss_gfx_queue_index_nmi
+    sep #$20
+    beq ..tiles_uploaded_next_frame
+    bmi ..tiles_uploaded_next_frame
+    bra .queue_end
+
+..tiles_uploaded_next_frame
+    lda #$01
+    sta.w !dss_list_gfx_loaded,x
+    plb
+    plp
+    plx
+    ply
+    sec
+    rtl
+
 .queue_end
     plb
     plp
@@ -263,6 +288,7 @@ find_and_queue_gfx:
     ply
     clc
     rtl
+
 
 
 buffer_locations:

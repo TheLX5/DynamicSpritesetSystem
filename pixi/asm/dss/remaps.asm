@@ -12,14 +12,6 @@ pushpc
         yoshi_wings_tilemap:
             db !small_wing_tile,!big_wing_tile
             db !small_wing_tile,!big_wing_tile
-    org $02DC1F
-        hammer_bro_platform_tilemap:
-            db !turn_block_tile,!turn_block_tile,!big_wing_tile,!big_wing_tile
-            db !turn_block_tile,!turn_block_tile,!small_wing_tile,!small_wing_tile
-    org $03868A
-        flying_grey_turnblocks_tilemap:
-            db !turn_block_tile,!turn_block_tile,!turn_block_tile,!big_wing_tile,!big_wing_tile
-            db !turn_block_tile,!turn_block_tile,!turn_block_tile,!small_wing_tile,!small_wing_tile
     org $029E82
         lava_splash_tilemap:
             db !lava_particle_tiny_tile,!lava_particle_small_tile
@@ -46,28 +38,6 @@ pushpc
             db !glitter_tiny_tile
             db !glitter_medium_tile
             db !glitter_large_tile
-
-    org $0291F1
-        bounce_block_tilemap:
-            db !turn_block_tile
-            db !note_block_tile
-            db !question_block_tile
-            db !turn_block_tile
-            db !glass_block_tile
-            db !on_off_block_tile
-            db !turn_block_tile
-    org $028789
-        bounce_block_props:
-            db $00
-            db $02
-            db $00
-            db $00
-            db $00
-            db $06
-            db $00
-            db $04
-            db $0A
-
     org $028ECC
         small_star_tilemap:
             db !glitter_tiny_tile,!glitter_medium_tile,!glitter_large_tile
@@ -93,16 +63,6 @@ pushpc
     org $01F097
         yoshi_throat_props:
             db $00
-
-    org $029F7A
-        yoshi_fireball_tilemap_1:
-            db !yoshi_fire_1_tile
-    org $029F7E
-        yoshi_fireball_tilemap_2:
-            db !yoshi_fire_2_tile
-    org $029F8B
-        yoshi_fireball_prop:
-            db $34
 
     org $029F5C
         water_bubble_tilemap:

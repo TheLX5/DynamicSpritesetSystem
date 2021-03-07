@@ -143,7 +143,7 @@ find_and_queue_gfx:
     rep #$20
     txa 
     and #$00FF
-    ora #!dss_exgfx                 ; prepare for decompression on snes side
+    ora.l !dss_exgfx_page           ; prepare for decompression on snes side
     sta $313E                       ; $313E = exgfx num
     lda.l !dss_ram_buffer_index
     and #$0007

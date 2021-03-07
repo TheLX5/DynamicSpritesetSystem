@@ -115,6 +115,14 @@
 ;# 20 bytes
     !dss_cluster_sprite_copy = !dss_extended_sprite_copy+10
 
+;# Copy of the bounce sprite table ($1699)
+;# 4 bytes
+    !dss_bounce_sprite_copy = !dss_cluster_sprite_copy+20
+
+;# Page of ExGFX that will be used for decompressing graphics.
+;# The default value is !dss_exgfx
+;# 2 bytes
+    !dss_exgfx_page = !dss_bounce_sprite_copy+4
 
 ;####################################################################
 ;# Macros
@@ -197,6 +205,9 @@ init:
     plb
     rep #$30
 
+
+    lda.w #!dss_exgfx
+    sta.w !dss_exgfx_page
     stz.w !dss_gfx_queue_index_nmi
     stz.w !dss_gfx_queue_index_game
     stz.w !dss_ram_buffer_index
@@ -249,6 +260,9 @@ init:
     stz.w !dss_cluster_sprite_copy+10,x
     dex #2
     bpl -
+
+    stz.w !dss_bounce_sprite_copy,x
+    stz.w !dss_bounce_sprite_copy+2,x 
 
     plb
     sep #$30

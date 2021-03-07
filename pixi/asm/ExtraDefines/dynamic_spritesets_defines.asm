@@ -5,13 +5,13 @@
     !dss_exgfx = $0D00
 
 ;# How many tiles from the queue will be uploaded per frame
-    !dss_queue_tiles = 6
+    !dss_queue_tiles = 5
 
 ;# How many frames are needed to mark a GFX as unused
     !dss_time_to_unmark_gfx = 16
 
 ;# Main RAM defines
-;# Requires at least 1541 (0x605) bytes of consecutive free RAM
+;# Requires at least 1751 (0x6D7) bytes of consecutive free RAM
 ;# or you could edit the defines below to make some of them not consecutive
     !dss_ram = $40C000
 
@@ -174,7 +174,12 @@
 
 ;# Copy of the bounce sprite table ($1699)
 ;# 4 bytes
-    !dss_bounce_sprite_copy = !dss_cluster_sprite_copy+4
+    !dss_bounce_sprite_copy = !dss_cluster_sprite_copy+20
+
+;# Page of ExGFX that will be used for decompressing graphics.
+;# The default value is !dss_exgfx
+;# 2 bytes
+    !dss_exgfx_page = !dss_bounce_sprite_copy+4
 
 ;####################################################################
 ;# Spriteset defines

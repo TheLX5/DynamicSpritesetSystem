@@ -41,6 +41,8 @@ find_and_queue_gfx:
     asl
     tay
     lda.w !dss_list_queue_index,y
+    sec 
+    sbc.w #!dss_queue_tiles*4
     sec
     sbc.w !dss_gfx_queue_index_nmi
     sep #$20

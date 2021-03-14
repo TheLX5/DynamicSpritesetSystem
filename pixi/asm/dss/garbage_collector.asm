@@ -71,7 +71,7 @@ fill_sprites:
     lda.w exgfx_ids_original_sprites,y
     bra ..queue
 ..custom
-    lda !7FAB10,x
+    lda !7FAB9E,x
     cmp.l !dss_custom_sprite_copy,x
     sta.l !dss_custom_sprite_copy,x
     beq ..next 

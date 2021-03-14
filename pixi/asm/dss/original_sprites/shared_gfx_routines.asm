@@ -285,6 +285,8 @@ pushpc
             jsr GetDrawInfoBnk1
             pei ($00)
             ldy !9E,x
+            cpy #$36
+            beq .end2
             lda !1602,x
             cmp #$FF
             beq .original
@@ -298,6 +300,7 @@ pushpc
             bcs .original
             jsl find_and_queue_gfx
             bcs .loaded
+        .end2
             ldx $15E9|!addr
             pla 
             pla 
@@ -307,9 +310,9 @@ pushpc
         .original
             jml third_shared_gfx_original
 
-        warnpc $019F44
+        warnpc $019F48
 
-    org $019F44
+    org $019F48
         third_shared_gfx_end:
 pullpc
 
@@ -472,6 +475,8 @@ pullpc
         bcs .flip
         eor #$40
     .flip
+        ora $04
+        ora $64
         jml third_shared_gfx_end
 
     third_shared_gfx:

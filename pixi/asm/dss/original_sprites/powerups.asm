@@ -53,7 +53,7 @@ pushpc
             ;# Signature
                 db "DSS"
             ;# Version number
-                dw 0100
+                dw 0101
             ;# Shared routine
                 dl find_and_queue_gfx
         warnpc $01DF91

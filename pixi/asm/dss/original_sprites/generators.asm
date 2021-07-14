@@ -10,6 +10,8 @@ pushpc
 pullpc
 
     generator_load:
+        ldy $9D
+        bne .ret
         ldx $18B9|!addr
         lda.l .gfx1-1,x
         cmp.b #!dss_id_null
@@ -26,6 +28,8 @@ pullpc
     .skip
         txa
         jml generator_load_end
+    .ret
+        jml generator_load_return
 
     .gfx1
         db !dss_id_eerie

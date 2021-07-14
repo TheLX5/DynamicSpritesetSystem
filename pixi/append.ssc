@@ -423,7 +423,7 @@
 88 0002 0,1,415
 
 ; Layer 3 smash
-89 0002 0,0,*Layer 3\n Smash*
+89 0002 0,0,*Layer 3\n Smash *
 
 ; Yoshi house's birds
 ;8A 0002 0,0,0

@@ -25,7 +25,8 @@ pushpc
 
         basic_configuration:
             dl !dss_ram                         ; this section gets read by other resources
-            dw !dss_exgfx                       ; to grab useful info about this patch
+            dw !dss_exgfx_id_page_0             ; to grab useful info about this patch
+            dw !dss_exgfx_id_page_1
             db !dss_queue_tiles
             db !dss_time_to_unmark_gfx
             

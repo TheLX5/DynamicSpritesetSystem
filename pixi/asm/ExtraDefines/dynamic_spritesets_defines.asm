@@ -1,8 +1,11 @@
 ;#########################################################################
 ;# Customization defines
 
-;# Starting ExGFX ID for the dynamic spritesets
-    !dss_exgfx = $0D00
+;# Starting ExGFX ID for the dynamic spritesets, first page
+    !dss_exgfx_id_page_0 = $0D00
+
+;# Starting ExGFX ID for the dynamic spritesets, second page
+    !dss_exgfx_id_page_1 = $0E00
 
 ;# How many tiles from the queue will be uploaded per frame
     !dss_queue_tiles = 5
@@ -11,7 +14,7 @@
     !dss_time_to_unmark_gfx = 16
 
 ;# Main RAM defines
-;# Requires at least 1751 (0x6D7) bytes of consecutive free RAM
+;# Requires at least 1873 (0x751) bytes of consecutive free RAM
 ;# or you could edit the defines below to make some of them not consecutive
     !dss_ram = $40C000
 
@@ -79,20 +82,23 @@
 ;# RAM defines
 
 ;# Map of used 16x16 tiles in SP3-SP4.
-;# Each entry has an 8-bit ID, useful to quickly compare data
-;# 64 bytes
+;# Each entry has an 9-bit ID, useful to quickly compare data
+;# The ID is separated across two different blocks of ram.
+;# 64 bytes each
     !dss_map #= !dss_ram
+    !dss_ex_map #= !dss_map+64
 
 ;# List of IDs of the currently loaded GFX files.
 ;# FF = Invalid GFX
 ;# 32 bytes
-    !dss_list #= !dss_map+64
+    !dss_list #= !dss_ex_map+64
+    !dss_ex_list #= !dss_list+32
 
 ;# Timer to mark as unused each GFX file
 ;# Each GFX is marked as unused after 16 frames of being unused
 ;# This is customizable in a global basis
 ;# 32 bytes
-    !dss_list_timer #= !dss_list+32
+    !dss_list_timer #= !dss_ex_list+32
 
 ;# Amount of tiles used by each loaded GFX
 ;# 32 bytes
@@ -176,10 +182,27 @@
 ;# 4 bytes
     !dss_bounce_sprite_copy = !dss_cluster_sprite_copy+20
 
+;# Copy of the minor extended sprite table ($17F0)
+;# 12 bytes
+    !dss_minor_extended_sprite_copy = !dss_bounce_sprite_copy+4
+
+;# Copy of the smoke sprite table ($17C0)
+;# 4 bytes
+    !dss_smoke_sprite_copy = !dss_minor_extended_sprite_copy+12
+
+;# Copy of the spinning coin sprite table ($17D0)
+;# 4 bytes
+    !dss_spinning_coin_sprite_copy = !dss_smoke_sprite_copy+4
+
+;# Copy of the score sprite table ($16E1)
+;# 6 bytes
+    !dss_score_sprite_copy = !dss_spinning_coin_sprite_copy+4
+
 ;# Page of ExGFX that will be used for decompressing graphics.
 ;# The default value is !dss_exgfx
-;# 2 bytes
-    !dss_exgfx_page = !dss_bounce_sprite_copy+4
+;# 2 bytes each
+    !dss_exgfx_page_0 = !dss_score_sprite_copy+6
+    !dss_exgfx_page_1 = !dss_exgfx_page_0+2
 
 ;####################################################################
 ;# Spriteset defines

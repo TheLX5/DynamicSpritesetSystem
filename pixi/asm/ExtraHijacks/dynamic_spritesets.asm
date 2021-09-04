@@ -17,7 +17,7 @@
 ;################################################
 ;# Include defines
 
-    incsrc "../dss/sa1_defs.asm"
+    incsrc "../sa1def.asm"
     incsrc "../ExtraDefines/dynamic_spritesets_defines.asm"
 
 ;################################################

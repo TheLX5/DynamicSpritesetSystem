@@ -5,13 +5,16 @@
     !dss_config = $02D60B
 
 ;# Starting ExGFX ID for the dynamic spritesets
-    !dss_exgfx = read2(!dss_config+3)
+    !dss_exgfx_id_page_0 = read2(!dss_config+3)
+
+;# Starting ExGFX ID for the dynamic spritesets
+    !dss_exgfx_id_page_1 = read2(!dss_config+5)
 
 ;# How many tiles from the queue will be uploaded per frame
-    !dss_queue_tiles = read1(!dss_config+5)
+    !dss_queue_tiles = read1(!dss_config+7)
 
 ;# How many frames are needed to mark a GFX as unused
-    !dss_time_to_unmark_gfx = read1(!dss_config+6)
+    !dss_time_to_unmark_gfx = read1(!dss_config+8)
 
 ;# Main RAM define
 ;# Requires at least 1745 (0x6D1) bytes of consecutive free RAM
@@ -22,20 +25,23 @@
 ;# RAM defines
 
 ;# Map of used 16x16 tiles in SP3-SP4.
-;# Each entry has an 8-bit ID, useful to quickly compare data
-;# 64 bytes
+;# Each entry has an 9-bit ID, useful to quickly compare data
+;# The ID is separated across two different blocks of ram.
+;# 64 bytes each
     !dss_map #= !dss_ram
+    !dss_ex_map #= !dss_map+64
 
 ;# List of IDs of the currently loaded GFX files.
 ;# FF = Invalid GFX
 ;# 32 bytes
-    !dss_list #= !dss_map+64
+    !dss_list #= !dss_ex_map+64
+    !dss_ex_list #= !dss_list+32
 
 ;# Timer to mark as unused each GFX file
 ;# Each GFX is marked as unused after 16 frames of being unused
 ;# This is customizable in a global basis
 ;# 32 bytes
-    !dss_list_timer #= !dss_list+32
+    !dss_list_timer #= !dss_ex_list+32
 
 ;# Amount of tiles used by each loaded GFX
 ;# 32 bytes
@@ -119,10 +125,28 @@
 ;# 4 bytes
     !dss_bounce_sprite_copy = !dss_cluster_sprite_copy+20
 
+;# Copy of the minor extended sprite table ($17F0)
+;# 12 bytes
+    !dss_minor_extended_sprite_copy = !dss_bounce_sprite_copy+4
+
+;# Copy of the smoke sprite table ($17C0)
+;# 4 bytes
+    !dss_smoke_sprite_copy = !dss_minor_extended_sprite_copy+12
+
+;# Copy of the spinning coin sprite table ($17D0)
+;# 4 bytes
+    !dss_spinning_coin_sprite_copy = !dss_smoke_sprite_copy+4
+
+;# Copy of the score sprite table ($16E1)
+;# 6 bytes
+    !dss_score_sprite_copy = !dss_spinning_coin_sprite_copy+4
+    
 ;# Page of ExGFX that will be used for decompressing graphics.
 ;# The default value is !dss_exgfx
-;# 2 bytes
-    !dss_exgfx_page = !dss_bounce_sprite_copy+4
+;# 2 bytes each
+    !dss_exgfx_page_0 = !dss_score_sprite_copy+6
+    !dss_exgfx_page_1 = !dss_exgfx_page_0+2
+
 
 ;####################################################################
 ;# Macros
@@ -206,8 +230,10 @@ init:
     rep #$30
 
 
-    lda.w #!dss_exgfx
-    sta.w !dss_exgfx_page
+    lda.w #!dss_exgfx_id_page_0
+    sta.w !dss_exgfx_page_0
+    lda.w #!dss_exgfx_id_page_1
+    sta.w !dss_exgfx_page_1
     stz.w !dss_gfx_queue_index_nmi
     stz.w !dss_gfx_queue_index_game
     stz.w !dss_ram_buffer_index
@@ -220,7 +246,10 @@ init:
 -   
     sta.w !dss_map,x
     sta.w !dss_map+32,x
+    sta.w !dss_ex_map,x
+    sta.w !dss_ex_map+32,x
     sta.w !dss_list,x
+    sta.w !dss_ex_list,x
     stz.w !dss_gfx_size,x
     stz.w !dss_list_usage,x
     stz.w !dss_tile_buffer,x
@@ -258,11 +287,20 @@ init:
     stz.w !dss_extended_sprite_copy,x
     stz.w !dss_cluster_sprite_copy,x
     stz.w !dss_cluster_sprite_copy+10,x
+    stz.w !dss_minor_extended_sprite_copy,x
     dex #2
     bpl -
 
+    stz.w !dss_minor_extended_sprite_copy+10,x
     stz.w !dss_bounce_sprite_copy,x
-    stz.w !dss_bounce_sprite_copy+2,x 
+    stz.w !dss_bounce_sprite_copy+2,x
+    stz.w !dss_smoke_sprite_copy,x
+    stz.w !dss_smoke_sprite_copy+2,x
+    stz.w !dss_spinning_coin_sprite_copy,x
+    stz.w !dss_spinning_coin_sprite_copy+2,x
+    stz.w !dss_score_sprite_copy,x
+    stz.w !dss_score_sprite_copy+2,x
+    stz.w !dss_score_sprite_copy+4,x
 
     plb
     sep #$30

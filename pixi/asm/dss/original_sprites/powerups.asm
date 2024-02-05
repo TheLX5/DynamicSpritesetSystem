@@ -57,6 +57,7 @@ pushpc
             ;# Shared routine
                 dl find_and_queue_gfx_page_0
                 dl find_and_queue_gfx_page_1
+                dl late_game_routines
         warnpc $01DF91
     org $01DF91
         bonus_items_write_end:

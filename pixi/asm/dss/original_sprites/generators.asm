@@ -1,7 +1,7 @@
 pushpc
     org $02B003
         generator_load_hijack:
-            jml generator_load
+            autoclean jml generator_load
         warnpc $02B007
     org $02B007
         generator_load_end:

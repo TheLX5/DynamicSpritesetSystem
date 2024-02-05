@@ -60,20 +60,10 @@
     freecode
 
 ;################################################
-;# Includes main files
-
-        incsrc "../dss/garbage_collector.asm"
-        incsrc "../dss/exgfx_lenght.asm"
-        incsrc "../dss/exgfx_ids.asm"
-        incsrc "../dss/tweaker.asm"
-        incsrc "../dss/remaps.asm"
-        incsrc "../dss/shared_routines.asm"
-
-;################################################
 ;# Includes edits SMW's sprites
 
-        incsrc "../dss/original_sprites/smoke_sprites.asm"
         incsrc "../dss/original_sprites/generators.asm"
+        incsrc "../dss/original_sprites/smoke_sprites.asm"
         incsrc "../dss/original_sprites/shared_gfx_routines.asm"
         incsrc "../dss/original_sprites/smushed_sprites.asm"
         incsrc "../dss/original_sprites/powerups.asm"
@@ -158,3 +148,13 @@
         incsrc "../dss/original_sprites/hammer_bro_platform.asm"
         incsrc "../dss/original_sprites/bounce_sprites.asm"
         incsrc "../dss/original_sprites/yoshi_fireball.asm"
+
+;################################################
+;# Includes main files
+
+        ;incsrc "../dss/garbage_collector.asm"
+        incsrc "../dss/exgfx_lenght.asm"
+        incsrc "../dss/exgfx_ids.asm"
+        incsrc "../dss/tweaker.asm"
+        incsrc "../dss/remaps.asm"
+        incsrc "../dss/shared_routines.asm"

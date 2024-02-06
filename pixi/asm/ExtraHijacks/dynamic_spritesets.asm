@@ -148,6 +148,7 @@
         incsrc "../dss/original_sprites/hammer_bro_platform.asm"
         incsrc "../dss/original_sprites/bounce_sprites.asm"
         incsrc "../dss/original_sprites/yoshi_fireball.asm"
+        incsrc "../dss/original_sprites/directional_coin.asm"
 
 ;################################################
 ;# Includes main files
